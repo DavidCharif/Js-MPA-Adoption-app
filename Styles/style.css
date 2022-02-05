@@ -1,0 +1,182 @@
+:root{
+    --color-raza : hsla(0, 0%, 80%, 1);
+    --color-nombre : hsla(0, 0%, 100%, 1);
+}
+body {
+    background-color: hsla(343, 96%, 89%, 1);
+    font-family: 'Nunito Sans', sans-serif;
+}
+#contenedor{
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#cardInicial{
+    flex-direction: row;
+    justify-content: center;
+    
+}
+#cardInicial > h3{
+    text-align: center;
+ 
+}
+#cardInicial > img {
+    justify-content: center;
+}
+
+#button{
+    width: 100%;
+}
+
+#logo {
+    flex-direction: row;
+    transform: scale(0.5);
+    transition: 0.5s;      
+}
+
+#logo:hover{
+    transform: scale(2);    
+}
+
+#contenedorPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#tituloPrincipal{   
+    font-size: large;
+    
+}
+.categoria{
+    display: inline;
+}/* 
+.categoria{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+    padding: 20px;
+    width: 120px;
+    background-color: black ;
+    border-radius: 10px;
+    color: white;
+} */
+ 
+#botones{
+    display: flex;
+    flex-direction: row;                
+    float: left;
+    gap:15px;
+    
+    
+} 
+#textoCategorias p{
+    border: 0;
+    padding: 0;
+    margin: 1px;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: yellowgreen;
+    color: white;
+    text-align: center;
+  }
+  .clear { clear: both; height: 60px; }
+#boxTitulo h3{
+    align-items: flex-start;
+    margin-left: 0;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.categoria{
+    justify-content: space-evenly;
+    background-color: hsla(222, 52%, 11%, 1);
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 130px;
+}
+.categoria:active{
+    opacity:50%;
+}
+
+.categoria p {
+    padding: 5px;
+}
+
+#imgContainer{
+    background-color: hsla(178, 45%, 67%, 1);
+    border-radius: 100%;
+    padding: 10px;
+}
+
+#contenedorGatos{
+    padding: 10px;
+    display: grid;
+    grid-template-columns:auto auto;
+    gap: 15px;        
+}
+#contenedorPerros{
+    padding: 10px;
+    display: grid;
+    grid-template-columns:auto auto;
+    gap: 15px;        
+}
+
+ #contenedorGatos{
+   
+   transition: 0.5s;
+}
+#contenedorPerros{
+    
+   transition: 0.5s;
+} 
+
+
+#contenedorDerecha{
+    margin-top: 15px;
+
+}
+
+.card{
+    width: 156px;
+    height: 250px;     
+    border-radius: 16px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 0;
+    padding: 12px;
+}
+.card div{
+    width: 100%;
+    font-size: 14px;
+          
+}
+#nombre{
+    font-weight: 700;
+    color:var(--color-nombre)
+}
+#raza{
+    font-weight: 400;
+    color : var(--color-raza)
+}
+

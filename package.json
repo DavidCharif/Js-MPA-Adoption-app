@@ -1,0 +1,22 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "**En este proyecto buscamos que logres evidenciar tus conceptos avanzados de fundamentos web,haciendo uso de HTML, CSS e implementando JavaScript moderno.\r Además que sustentar los conocimientod adquiridos haciendo uso de marcos de trabajo CSS, implementación de preprocesadores y realizar páginas interactivas con JavaScript vanilla integrando Webpack y Babel**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    
+    
+  },
+  "devDependencies": {
+    "standard": "16.0.4"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  }
+}
