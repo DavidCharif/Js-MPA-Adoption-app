@@ -32,7 +32,31 @@ export const pagPrincipal = () => {
       </div>
 
       <div class="clear"></div>
-      <footer><img src="design/Property1Home.svg"</footer>
+      <footer>
+      <ul>
+      <li>
+      
+      <a class="active" href="#home">
+      <div style="display:flex" id="activeContainer">
+      <img id="home" src="/img/footer/home.svg">
+      </div>
+      </a></li>
+      <li><a href="#news">
+      <div style="display:flex" id="activeContainer">
+      <img src="/img/footer/mensajes.svg">  
+      </div>
+      </a></li>
+      <li><a href="#contact">
+      <div style="display:flex" id="activeContainer">
+      <img src="/img/footer/fav.svg">
+      </div>
+      </a></li>
+      <li><a href="#about">
+      <div style="display:flex" id="activeContainer">
+      <img src="/img/footer/perfil.svg"></a></li>
+      </div>
+      </ul>
+      </footer>
   `
   textoCategorias = document.querySelector('.clear')
   let botonPerros = document.querySelector('#perros')

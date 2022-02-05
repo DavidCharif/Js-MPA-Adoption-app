@@ -1,6 +1,8 @@
 :root{
     --color-raza : hsla(0, 0%, 80%, 1);
     --color-nombre : hsla(0, 0%, 100%, 1);
+    --color-botones : hsla(222, 52%, 11%, 1);
+    --color-footer : #85d1ce;
 }
 body {
     background-color: hsla(343, 96%, 89%, 1);
@@ -84,16 +86,57 @@ body {
     padding: 0;
     margin: 1px;
 }
-footer {
+ul {
+    display: flex;
     position: fixed;
-    left: 0;
+    list-style-type: none;
+    margin: 0;
+    
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
     bottom: 0;
     width: 100%;
-    background-color: yellowgreen;
-    color: white;
-    text-align: center;
+    padding: 16px 24px;
+    left: 0;
+    justify-content:space-evenly;
+    align-items: center;
+    height: 72px;
   }
+  
+  li {
+    float: left;
+    
+  }
+  
+  li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+   
+  .active {
+    background-color: var(--color-botones);
+    border-radius: 50px;
+
+  }
+  #activeContainer{
+    padding: 8px 16px;
+  }
+ .active img {
+    filter: invert(79%) sepia(21%) saturate(529%) hue-rotate(129deg) brightness(94%) contrast(92%);
+    
+    
+  }
+  
   .clear { clear: both; height: 60px; }
+
+
 #boxTitulo h3{
     align-items: flex-start;
     margin-left: 0;
@@ -103,7 +146,7 @@ footer {
 
 .categoria{
     justify-content: space-evenly;
-    background-color: hsla(222, 52%, 11%, 1);
+    background-color: #0d162b;
     border-radius: 10px;
     color: white;
     padding: 10px;
