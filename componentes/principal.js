@@ -1,6 +1,13 @@
 import { getResGatos } from '../api/gatos/controller.js'
 import { getResPerros } from '../api/perros/controller.js'
+import { footerGenerator } from './footer.js'
+
 let textoCategorias
+/*
+let ContainerFav
+let ContainerHome
+let ContainerMensajes
+let ContainerProfile  */
 export const $contenedor = document.querySelector('body')
 
 export const pagPrincipal = () => {
@@ -31,39 +38,24 @@ export const pagPrincipal = () => {
       </div>
       </div>
 
-      <div class="clear"></div>
-      <footer>
-      <ul>
-      <li>
-      
-      <a class="active" href="#home">
-      <div style="display:flex" id="activeContainer">
-      <img id="home" src="/img/footer/home.svg">
-      </div>
-      </a></li>
-      <li><a href="#news">
-      <div style="display:flex" id="activeContainer">
-      <img src="/img/footer/mensajes.svg">  
-      </div>
-      </a></li>
-      <li><a href="#contact">
-      <div style="display:flex" id="activeContainer">
-      <img src="/img/footer/fav.svg">
-      </div>
-      </a></li>
-      <li><a href="#about">
-      <div style="display:flex" id="activeContainer">
-      <img src="/img/footer/perfil.svg"></a></li>
-      </div>
-      </ul>
-      </footer>
+      <div class="clear"></div>     
   `
+  footerGenerator($contenedor,1)
+
+  
   textoCategorias = document.querySelector('.clear')
   let botonPerros = document.querySelector('#perros')
   let botonGatos = document.querySelector('#gatos')
+ setTimeout(() => {
+ 
+  let ContainerMensajes = document.getElementById('ContainerMensajes')
+  let ContainerFav = document.getElementById('ContainerFav')
+  let ContainerProfile = document.getElementById('ContainerProfile')   
+  let ContainerHome = document.getElementById('ContainerHome')
+ }, 800);
 
   getResPerros(textoCategorias)
-  botonGatos.addEventListener('click', async e => {
+  botonGatos.addEventListener('click', async (e) => {
     botonGatos.style.opacity = '100%'
     botonPerros.style.opacity = '50%'
     console.log('Click en gatos')
@@ -71,14 +63,39 @@ export const pagPrincipal = () => {
       getResGatos(textoCategorias)
     }
   })
-  botonPerros.addEventListener('click', async e => {
+  botonPerros.addEventListener('click', async (e) => {
     botonPerros.style.opacity = '100%'
     botonGatos.style.opacity = '50%'
     console.log('Click en perros')
     if (document.getElementById('contenedorPerros') == null) {
       getResPerros(textoCategorias)
     }
+  }) 
+
+
+   ContainerHome.addEventListener('click', (e) => {
+    /* ContainerHome.innerHTML += '<p>Home</p>' 
+    let classList =  ContainerHome.parentNode.classList;
+    classList = Array.from(classList)
+    if (classList.includes('active')){
+      console.log('home')
+    let p = document.createElement("p")
+    p.textContent = 'Home'
+    p.setAttribute('id','textFooter')
+    ContainerHome.parentNode.classList.toggle('active')
+    ContainerHome.appendChild(p)
+    } */
+    console.log("click");
+  }) 
+   ContainerMensajes.addEventListener('click', (e) => {
+    console.log('messages')
   })
+  ContainerFav.addEventListener('click', (e) => {
+    console.log('fav')
+  })
+  ContainerProfile.addEventListener('click', (e) => {
+    console.log('Profile')
+  }) 
 }
 
 /* export const crearContenedorData = (data) => {

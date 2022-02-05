@@ -9,11 +9,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    
-    
-  },
   "devDependencies": {
+    "prettier": "2.5.1",
     "standard": "16.0.4"
   },
   "eslintConfig": {

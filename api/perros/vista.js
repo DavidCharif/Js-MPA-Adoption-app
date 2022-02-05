@@ -16,14 +16,14 @@ export const drawCard = (data) => {
       let {nombre, raza, urlImg} = each
       i % 2 ? divIzq.innerHTML += `
       <div class="card" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 26.42%, #000000 99.33%), url(${urlImg}); background-size: cover;">
-      <div>
+      <div id="textCard">
       <div id="nombre">${nombre}</div>
       <div id="raza">${raza}</div>
       </div>
       </div>
       ` : divDer.innerHTML += `
       <div class="card" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 26.42%, #000000 99.33%), url(${urlImg}); background-size: cover;">
-      <div>
+      <div id="textCard">
       <div id="nombre">${nombre}</div>
       <div id="raza">${raza}</div>
       </div>
