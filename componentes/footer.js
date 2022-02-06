@@ -19,7 +19,7 @@ const footerFun = () => {
   <li class="navLink">
     <a href="#news">
       <div style="display:flex" id="ContainerMensajes" class="footerContainer">
-        <img src="proyecto/img/footer/mensajes.svg">  
+        <img src="/img/footer/mensajes.svg">  
       </div>
      </a>
   </li>
