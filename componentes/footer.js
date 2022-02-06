@@ -19,14 +19,14 @@ const footerFun = () => {
   <li class="navLink">
     <a href="#news">
       <div style="display:flex" id="ContainerMensajes" class="footerContainer">
-        <img src="/img/footer/mensajes.svg">  
+        <img src="img/footer/mensajes.svg">  
       </div>
      </a>
   </li>
   <li class="navLink">
     <a href="#contact">
       <div style="display:flex" id="ContainerFav" class="footerContainer">
-        <img src="./img/footer/fav.svg">
+        <img src="img/footer/fav.svg">
       </div>
     </a>
   </li>
