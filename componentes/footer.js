@@ -12,7 +12,7 @@ const footerFun = () => {
   <li class="navLink">      
     <a >
     <div style="display:flex" id="ContainerHome" class="footerContainer">
-      <img id="home" src="proyecto/img/footer/home.svg">
+      <img id="home" src="img/footer/home.svg">
     </div>
     </a>
   </li>
