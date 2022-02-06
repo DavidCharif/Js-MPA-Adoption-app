@@ -12,28 +12,28 @@ const footerFun = () => {
   <li class="navLink">      
     <a >
     <div style="display:flex" id="ContainerHome" class="footerContainer">
-      <img id="home" src="/img/footer/home.svg">
+      <img id="home" src="proyecto/img/footer/home.svg">
     </div>
     </a>
   </li>
   <li class="navLink">
     <a href="#news">
       <div style="display:flex" id="ContainerMensajes" class="footerContainer">
-        <img src="/img/footer/mensajes.svg">  
+        <img src="proyecto/img/footer/mensajes.svg">  
       </div>
      </a>
   </li>
   <li class="navLink">
     <a href="#contact">
       <div style="display:flex" id="ContainerFav" class="footerContainer">
-        <img src="/img/footer/fav.svg">
+        <img src="./img/footer/fav.svg">
       </div>
     </a>
   </li>
   <li class="navLink">
     <a href="#about">
       <div style="display:flex" id="ContainerProfile" class="footerContainer">
-        <img src="/img/footer/perfil.svg"></a></li>
+        <img src="img/footer/perfil.svg"></a></li>
       </div>
     </a>
   </li>

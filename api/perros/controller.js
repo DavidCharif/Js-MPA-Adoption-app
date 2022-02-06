@@ -32,6 +32,9 @@ export const getDetailDog = (id, lugarInsertar) => {
   insertDetail(fragmentHtml,lugarInsertar)
   setTimeout(() => {
     let arrow = document.getElementById("backArrow")
-    arrow.onclick = () => pagPrincipal()  
+    arrow.onclick = () => pagPrincipal()
+    let likeButton = document.getElementById("likeButton")
+    likeButton.onclick = () => console.log("aloha");  
     }, 200);
+
 }

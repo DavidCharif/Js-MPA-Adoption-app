@@ -1,5 +1,3 @@
-import { pagPrincipal } from "./principal.js"
-
 export const openDetail = obj => {
   let {nombre,
      urlImg,
