@@ -41,7 +41,7 @@
     "direccion":"Calle 223",
     "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
     "historia":"lorem ipsum",
-    "urlImg":"../img/dog/04.png",
+    "urlImg":"img/dog/04.png",
     "publicado":"Maria Dolores"
   }],
   "gatos":[{

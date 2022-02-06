@@ -52,7 +52,7 @@ const crearFooterActivo = (activeElement) => {
       case 'home':
         li.innerHTML = `<a class="active">
             <div style="display:flex" id="ContainerHome" class="footerContainer">
-              <img id="home" src="/img/footer/home.svg">
+              <img id="home" src="img/footer/home.svg">
               <p>Home</p>
             </div>
           </a>`
@@ -60,7 +60,7 @@ const crearFooterActivo = (activeElement) => {
       case 'messages':
         li.innerHTML = `<a class="active">
             <div style="display:flex" id="ContainerMensajes" class="footerContainer">
-              <img src="/img/footer/mensajes.svg" > 
+              <img src="img/footer/mensajes.svg" > 
               <p>Mensajes</p>
             </div>
           </a>`
@@ -69,7 +69,7 @@ const crearFooterActivo = (activeElement) => {
         li.innerHTML = `
           <a class="active">
             <div style="display:flex" id="ContainerFav" class="footerContainer">
-              <img id="home" src="/img/footer/fav.svg">
+              <img id="home" src="img/footer/fav.svg">
               <p>Favoritos</p>
             </div>
           </a> `
@@ -78,7 +78,7 @@ const crearFooterActivo = (activeElement) => {
         li.innerHTML = `
           <a class="active">
             <div style="display:flex" id="ContainerProfile" class="footerContainer">
-              <img id="home" src="/img/footer/perfil.svg">
+              <img id="home" src="img/footer/perfil.svg">
               <p>Perfil</p>
             </div>
           </a>        
