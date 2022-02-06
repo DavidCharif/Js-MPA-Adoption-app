@@ -43,6 +43,7 @@ export const addtoDOM = (contenedor, contenedorAnterior, lugarInsertar) => {
   if (contenedorAnterior != null) {
     contenedorAnterior.remove()
   }
+  
   contenedor.style.transform = 'translateY(300px)'
   contenedor.style.opacity = '0%'
   lugarInsertar.before(contenedor)

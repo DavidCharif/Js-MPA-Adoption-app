@@ -4,7 +4,7 @@ import { drawCard, addtoDOM, insertDetail } from './vista.js'
 
 import {containerGato} from '../gatos/vista.js'
 import { addEvents, pagPrincipal } from '../../componentes/principal.js'
-import { openDetail } from '../../componentes/detalle.js'
+import { openDetail, addToFav } from '../../componentes/detalle.js'
 export let contenedorPerro
 let dataPerros
 let i = 0
@@ -34,7 +34,11 @@ export const getDetailDog = (id, lugarInsertar) => {
     let arrow = document.getElementById("backArrow")
     arrow.onclick = () => pagPrincipal()
     let likeButton = document.getElementById("likeButton")
-    likeButton.onclick = () => console.log("aloha");  
+    likeButton.onclick = () => {
+      addToFav(data)
+      likeButton.firstElementChild.src = "img/detail/like1.png"
+    };
+
     }, 200);
 
 }

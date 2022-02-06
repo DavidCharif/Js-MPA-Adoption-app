@@ -1,5 +1,6 @@
 import { getResGatos, getDetailCat} from '../api/gatos/controller.js'
 import { getResPerros, getDetailDog} from '../api/perros/controller.js'
+import { goToFav } from './fav.js';
 import { footerGenerator } from './footer.js'
 
 let dog ;
@@ -42,21 +43,19 @@ export const pagPrincipal = () => {
 
       <div class="clear"></div>     
   `
-  footerGenerator($contenedor, 1)
+  
 
   textoCategorias = document.querySelector('.clear')
   let botonPerros = document.querySelector('#perros')
   let botonGatos = document.querySelector('#gatos')
   setTimeout(() => {
-    let ContainerMensajes = document.getElementById('ContainerMensajes')
-    let ContainerFav = document.getElementById('ContainerFav')
-    let ContainerProfile = document.getElementById('ContainerProfile')
-    let ContainerHome = document.getElementById('ContainerHome')
+    
     let cards = document.getElementsByClassName('card')
-    console.log('cards', cards)
     getResPerros(textoCategorias, cards)
+    
     dog = true
     cat = false
+       
 
     botonGatos.addEventListener('click', async (e) => {
       botonGatos.style.opacity = '100%'
@@ -65,10 +64,11 @@ export const pagPrincipal = () => {
 
       if (document.getElementById('contenedorGatos') == null) {
         getResGatos(textoCategorias, cards)
-      }
+       }
       dog = false
       cat = true
       console.log('dog, cat', dog, cat);
+      footerGenerator($contenedor, 1)
     })
     botonPerros.addEventListener('click', async (e) => {
       botonPerros.style.opacity = '100%'
@@ -76,12 +76,18 @@ export const pagPrincipal = () => {
       console.log('Click en perros')
       if (document.getElementById('contenedorPerros') == null) {
         getResPerros(textoCategorias, cards)
+        
       }
       dog = true
       cat = false
-      
+      footerGenerator($contenedor, 1)
       console.log('dog, cat', dog, cat);
     })
+    footerGenerator($contenedor, 1)
+    let ContainerMensajes = document.getElementById('ContainerMensajes')
+    let ContainerFav = document.getElementById('ContainerFav')
+    let ContainerProfile = document.getElementById('ContainerProfile')
+    let ContainerHome = document.getElementById('ContainerHome')
 
     ContainerHome.addEventListener('click', (e) => {
       /* ContainerHome.innerHTML += '<p>Home</p>' 
@@ -101,7 +107,7 @@ export const pagPrincipal = () => {
       console.log('messages')
     })
     ContainerFav.addEventListener('click', (e) => {
-      console.log('fav')
+      goToFav($contenedor)
     })
     ContainerProfile.addEventListener('click', (e) => {
       console.log('Profile')

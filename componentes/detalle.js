@@ -32,6 +32,7 @@ export const openDetail = obj => {
     <div id="bloqueThreeDatos">
       <div id="Personalidad">
         <h4>Personalidad</h4>
+        <p>${personalidad}</p>
       </div>
       <div id="historia">
         <h4>Historia de ${nombre}</h4>
@@ -60,4 +61,19 @@ export const openDetail = obj => {
   return docFragment;
 
 
+}
+
+export const addToFav = (obj) => {
+  if(localStorage.length == 0){
+    console.log("Local storage vacio");
+    let arrayFav = []
+    arrayFav.unshift(obj)
+    console.log('arrayFav', arrayFav);
+    localStorage.setItem('fav', JSON.stringify(arrayFav))
+    
+  } else {
+    let localObj = JSON.parse(localStorage.getItem('fav'));
+    localObj.unshift(obj)
+    localStorage.setItem('fav',JSON.stringify(localObj))
+  }
 }

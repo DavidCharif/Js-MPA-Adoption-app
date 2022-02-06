@@ -242,7 +242,7 @@ ul {
 }
 #PrimeraMitad{
     display: flex;
-    justify-content:center     ;
+    justify-content:center;
 }
 #imagenDetalle {
     
@@ -253,6 +253,7 @@ ul {
     background-color: white;
     padding: 10px 20px;
     border-radius: 16px 16px 0px 0px;
+    height: 100%;
 }
 
 #backArrow {
@@ -260,6 +261,7 @@ ul {
     background-color: rgb(255, 255, 255);
     border-radius: 180px;
     padding: 5px;
+    cursor: pointer;
 }
 #backArrow:hover {
     background-color: grey;
@@ -283,6 +285,7 @@ ul {
     padding: 5px;
     border-radius: 100px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349); 
+    cursor: pointer;
 }
 
 #likeButton img {
