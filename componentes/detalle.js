@@ -17,19 +17,19 @@ export const openDetail = obj => {
   div.innerHTML = `
   <div id="PrimeraMitad">
     <div id="imagenDetalle" style="background: url(${urlImg}); background-size: cover">
-    <img id="backArrow" src="/img/detail/backArray.png">
+    <img id="backArrow" src="img/detail/backArray.png">
     </div>
   </div>
 
   <div id="segundaMitad">
     <div id="bloqueOneDatos">
-      <h3 id="textoBloqueOne">${nombre} <img src='/img/detail/${genero}.png'></h3>      
-      <div id="likeButton"><img src="/img/detail/like.png"></div>
+      <h3 id="textoBloqueOne">${nombre} <img src='img/detail/${genero}.png'></h3>      
+      <div id="likeButton"><img src="img/detail/like.png"></div>
     </div>
     <div id="bloqueTwoDatos">
-      <p id="bloqueDosFirst"><img src="/img/detail/raza.png">${raza}</p>
-      <p id="bloqueDosSecond"><img src="/img/detail/edad.png">${edad}</p>
-      <p id="bloqueDosThird"><img src="/img/detail/map.png">${direccion}</p>
+      <p id="bloqueDosFirst"><img src="img/detail/raza.png">${raza}</p>
+      <p id="bloqueDosSecond"><img src="img/detail/edad.png">${edad}</p>
+      <p id="bloqueDosThird"><img src="img/detail/map.png">${direccion}</p>
     </div>
     <div id="bloqueThreeDatos">
       <div id="Personalidad">
