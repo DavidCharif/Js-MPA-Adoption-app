@@ -1,76 +1,92 @@
 {
   "perros":[{
+    "id":1,
     "nombre":"Rocky",
-    "genero":"m",
+    "genero":"male",
     "raza":"Rottweiler",
-    "Edad":"4",
-    "direccion":"Calle 223",
-    "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
-    "historia":"lorem ipsum",
-    "urlImg":"../img/dog/01.png"
+    "edad":"3 meses",
+    "direccion":"4140 Parker Rd. Allentown,New Mexico 31134",
+    "Personalidad":["Jugueton","Inquieto","Tranquilo"],
+    "historia":"Rocky es un perrito muy lindo y cariñoso, tiene 5 hermanitos más y por cuestiones de espacio y tiempo no podremos cuidar a todos, nuestra misión es encontrar la familia ideal para él y seguro que tú eres la persona indicada.",
+    "urlImg":"/img/dog/01.png",
+    "publicado":"Maria Dolores"
   },{
+    "id":2,
     "nombre":"Papi",
-    "genero":"m",
+    "genero":"male",
     "raza":"Chihuahua",
-    "Edad":"4",
-    "direccion":"Calle 223",
+    "edad":"4",
+    "direccion":"4140 Parker Rd. Allentown, New Mexico 31134",
     "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
     "historia":"lorem ipsum",
-    "urlImg":"../img/dog/02.png"
+    "urlImg":"../img/dog/02.png",
+    "publicado":"Maria Dolores"
   },{
+    "id":3,
     "nombre":"Pelusa",
-    "genero":"m",
+    "genero":"female",
     "raza":"Bichón frisé",
-    "Edad":"4",
+    "edad":"4",
     "direccion":"Calle 223",
     "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
     "historia":"lorem ipsum",
-    "urlImg":"../img/dog/03.png"
+    "urlImg":"../img/dog/03.png",
+    "publicado":"Maria Dolores"
   },{
+    "id":4,
     "nombre":"Chester",
-    "genero":"m",
+    "genero":"male",
     "raza":"Golden retriever",
-    "Edad":"4",
+    "edad":"4",
     "direccion":"Calle 223",
     "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
     "historia":"lorem ipsum",
-    "urlImg":"../img/dog/04.png"
+    "urlImg":"../img/dog/04.png",
+    "publicado":"Maria Dolores"
   }],
   "gatos":[{
+    "id":"1",
     "nombre":"Matilde",
-    "genero":"m",
+    "genero":"female",
     "raza":"British Shorthair",
-    "Edad":"7",
-    "direccion":"Calle 223",
+    "edad":"6 meses",
+    "direccion":"4140 Parker Rd. Allentown, New Mexico 31134",
     "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
-    "historia":"lorem ipsum",
-    "urlImg":"../../img/cat/01.png"
+    "historia":"Matilde es la mejor guarda espaldas, siempre esta hay para conversar y recibirá cada día con un fuerte cariño. Fue rescatada y busco una persona que le pueda dar todo el amor que ella necesita.",
+    "urlImg":"img/cat/01.png",
+    "publicado":"Juan Jesus"
   },{
+    "id":"2",
     "nombre":"Pelusa",
-    "genero":"m",
+    "genero":"female",
     "raza":"Birmano",
-    "Edad":"7",
+    "edad":"7",
     "direccion":"Calle 223",
     "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
     "historia":"lorem ipsum",
-    "urlImg":"../img/cat/02.png"
+    "urlImg":"../img/cat/02.png",
+    "publicado":"Juan Jesus"
   },{
+    "id":"3",
     "nombre":"Kity",
-    "genero":"m",
+    "genero":"male",
     "raza":"Bombay",
-    "Edad":"7",
+    "edad":"7",
     "direccion":"Calle 223",
     "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
     "historia":"lorem ipsum",
-    "urlImg":"../img/cat/03.png"
+    "urlImg":"../img/cat/03.png",
+    "publicado":"Juan Jesus"
   },{
+    "id":"4",
     "nombre":"Bombón",
-    "genero":"m",
+    "genero":"female",
     "raza":"Gato americano",
-    "Edad":"7",
+    "edad":"7",
     "direccion":"Calle 223",
     "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
     "historia":"lorem ipsum",
-    "urlImg":"../img/cat/04.png"
+    "urlImg":"../img/cat/04.png",
+    "publicado":"Juan Jesus"
   }]
 }

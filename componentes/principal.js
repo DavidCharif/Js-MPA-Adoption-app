@@ -1,7 +1,9 @@
-import { getResGatos } from '../api/gatos/controller.js'
-import { getResPerros } from '../api/perros/controller.js'
+import { getResGatos, getDetailCat} from '../api/gatos/controller.js'
+import { getResPerros, getDetailDog} from '../api/perros/controller.js'
 import { footerGenerator } from './footer.js'
 
+let dog ;
+let cat ;
 let textoCategorias
 /*
 let ContainerFav
@@ -40,41 +42,49 @@ export const pagPrincipal = () => {
 
       <div class="clear"></div>     
   `
-  footerGenerator($contenedor,1)
+  footerGenerator($contenedor, 1)
 
-  
   textoCategorias = document.querySelector('.clear')
   let botonPerros = document.querySelector('#perros')
   let botonGatos = document.querySelector('#gatos')
- setTimeout(() => {
- 
-  let ContainerMensajes = document.getElementById('ContainerMensajes')
-  let ContainerFav = document.getElementById('ContainerFav')
-  let ContainerProfile = document.getElementById('ContainerProfile')   
-  let ContainerHome = document.getElementById('ContainerHome')
- }, 800);
+  setTimeout(() => {
+    let ContainerMensajes = document.getElementById('ContainerMensajes')
+    let ContainerFav = document.getElementById('ContainerFav')
+    let ContainerProfile = document.getElementById('ContainerProfile')
+    let ContainerHome = document.getElementById('ContainerHome')
+    let cards = document.getElementsByClassName('card')
+    console.log('cards', cards)
+    getResPerros(textoCategorias, cards)
+    dog = true
+    cat = false
 
-  getResPerros(textoCategorias)
-  botonGatos.addEventListener('click', async (e) => {
-    botonGatos.style.opacity = '100%'
-    botonPerros.style.opacity = '50%'
-    console.log('Click en gatos')
-    if (document.getElementById('contenedorGatos') == null) {
-      getResGatos(textoCategorias)
-    }
-  })
-  botonPerros.addEventListener('click', async (e) => {
-    botonPerros.style.opacity = '100%'
-    botonGatos.style.opacity = '50%'
-    console.log('Click en perros')
-    if (document.getElementById('contenedorPerros') == null) {
-      getResPerros(textoCategorias)
-    }
-  }) 
+    botonGatos.addEventListener('click', async (e) => {
+      botonGatos.style.opacity = '100%'
+      botonPerros.style.opacity = '50%'
+      console.log('Click en gatos')
 
+      if (document.getElementById('contenedorGatos') == null) {
+        getResGatos(textoCategorias, cards)
+      }
+      dog = false
+      cat = true
+      console.log('dog, cat', dog, cat);
+    })
+    botonPerros.addEventListener('click', async (e) => {
+      botonPerros.style.opacity = '100%'
+      botonGatos.style.opacity = '50%'
+      console.log('Click en perros')
+      if (document.getElementById('contenedorPerros') == null) {
+        getResPerros(textoCategorias, cards)
+      }
+      dog = true
+      cat = false
+      
+      console.log('dog, cat', dog, cat);
+    })
 
-   ContainerHome.addEventListener('click', (e) => {
-    /* ContainerHome.innerHTML += '<p>Home</p>' 
+    ContainerHome.addEventListener('click', (e) => {
+      /* ContainerHome.innerHTML += '<p>Home</p>' 
     let classList =  ContainerHome.parentNode.classList;
     classList = Array.from(classList)
     if (classList.includes('active')){
@@ -85,17 +95,36 @@ export const pagPrincipal = () => {
     ContainerHome.parentNode.classList.toggle('active')
     ContainerHome.appendChild(p)
     } */
-    console.log("click");
-  }) 
-   ContainerMensajes.addEventListener('click', (e) => {
-    console.log('messages')
-  })
-  ContainerFav.addEventListener('click', (e) => {
-    console.log('fav')
-  })
-  ContainerProfile.addEventListener('click', (e) => {
-    console.log('Profile')
-  }) 
+      console.log('click')
+    })
+    ContainerMensajes.addEventListener('click', (e) => {
+      console.log('messages')
+    })
+    ContainerFav.addEventListener('click', (e) => {
+      console.log('fav')
+    })
+    ContainerProfile.addEventListener('click', (e) => {
+      console.log('Profile')
+    })
+  }, 300)
+}
+const detalle = (ele) => {
+  let idCard = ele.target.getAttribute('data-value')
+  if(dog){
+    getDetailDog(idCard, $contenedor)
+    
+  } else if (cat){
+    getDetailCat(idCard, $contenedor)
+  }
+  
+  
+
+}
+export const addEvents = (array) => {
+  for (let i = 0; i < array.length; i++) {
+    console.log('evento add')
+    array[i].addEventListener('click', (e) => detalle(e), false)
+  }
 }
 
 /* export const crearContenedorData = (data) => {

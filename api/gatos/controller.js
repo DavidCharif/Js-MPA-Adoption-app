@@ -1,13 +1,33 @@
 import { urlGatos } from '../ulr.js'
-import { drawCard, addtoDOM } from './vista.js'
+import { drawCard, addtoDOM, insertDetail } from './vista.js'
 import { getData } from './service.js'
+
+import { addEvents, pagPrincipal } from '../../componentes/principal.js'
+import { openDetail } from '../../componentes/detalle.js'
 import { containerPerro } from '../perros/vista.js'
 let contenedorGato
 let dataGatos
-export const getResGatos = async (textoCategorias) => {
+let i = 0;
+export const getResGatos = async (textoCategorias, data) => {
   if (dataGatos == null) {
     dataGatos = await getData(urlGatos)
   }
   contenedorGato = drawCard(dataGatos)
   addtoDOM(contenedorGato, containerPerro, textoCategorias)
+  if(i == 0){
+    addEvents(data)
+    i++
+  }
+
+}
+
+export const getDetailCat = (id, lugarInsertar) => {
+  let data = dataGatos[id - 1]
+  let fragmentHtml = openDetail(data)
+  
+  insertDetail(fragmentHtml,lugarInsertar)
+  setTimeout(() => {
+    let arrow = document.getElementById("backArrow")
+    arrow.onclick = () => pagPrincipal()  
+    }, 200);
 }

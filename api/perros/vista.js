@@ -15,17 +15,17 @@ export const drawCard = (data) => {
     data.forEach((each) => {
       let {nombre, raza, urlImg} = each
       i % 2 ? divIzq.innerHTML += `
-      <div class="card" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 26.42%, #000000 99.33%), url(${urlImg}); background-size: cover;">
+      <div class="card" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 26.42%, #000000 99.33%), url(${urlImg}); background-size: cover;" data-value="${i}">
       <div id="textCard">
-      <div id="nombre">${nombre}</div>
-      <div id="raza">${raza}</div>
+      <div id="nombre" data-value="${i}">${nombre}</div>
+      <div id="raza" data-value="${i}">${raza}</div>
       </div>
       </div>
       ` : divDer.innerHTML += `
-      <div class="card" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 26.42%, #000000 99.33%), url(${urlImg}); background-size: cover;">
-      <div id="textCard">
-      <div id="nombre">${nombre}</div>
-      <div id="raza">${raza}</div>
+      <div class="card" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 26.42%, #000000 99.33%), url(${urlImg}); background-size: cover;" data-value="${i}">
+      <div id="textCard" >
+      <div id="nombre" data-value="${i}">${nombre}</div>
+      <div id="raza" data-value="${i}">${raza}</div>
       </div>
       </div>
       `
@@ -33,11 +33,8 @@ export const drawCard = (data) => {
     })
     contenedorDataNew.append(divIzq, divDer)
     containerPerro = contenedorDataNew
-    containerPerro.style.transform = 'translateY(600px)'
-    return containerPerro
+     return containerPerro
   } else {
-    containerPerro.style.transform = 'translateY(600px)'
-    containerPerro.style.opacity = '100%'
     return containerPerro
   }
 }
@@ -53,6 +50,13 @@ export const addtoDOM = (contenedor, contenedorAnterior, lugarInsertar) => {
     contenedor.style.opacity = '100%'
   }, 200)
 }
+
+export const insertDetail = (htmlfragment, lugarInsertar) => {
+  lugarInsertar.innerHTML = ''
+  lugarInsertar.appendChild(htmlfragment);
+  console.log("done yolo dog xd");
+}
+
 /* export const drawCard = (data, textoCategorias) => {
   if (containerPerro == null || containerPerro.textContent === '') {
     containerPerro = crearContenedorData('Perro')

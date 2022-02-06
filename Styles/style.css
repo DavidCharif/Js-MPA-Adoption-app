@@ -7,6 +7,7 @@
 body {
     background-color: hsla(343, 96%, 89%, 1);
     font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
 }
 #contenedor{
   display: flex;
@@ -191,11 +192,11 @@ ul {
 }
 
  #contenedorGatos{
-   
+    height: 600px;
    transition: 0.5s;
 }
 #contenedorPerros{
-    
+    height: 600px;
    transition: 0.5s;
 } 
 
@@ -214,6 +215,7 @@ ul {
     justify-content: flex-end;
     align-items: flex-end;
     gap: 0;
+    cursor: pointer;
     
 }
 #textCard {
@@ -233,3 +235,103 @@ ul {
     color : var(--color-raza)
 }
 
+
+#contenedorDetalle {
+    display: flex;
+    justify-content: center;
+}
+#PrimeraMitad{
+    display: flex;
+    justify-content:center     ;
+}
+#imagenDetalle {
+    
+    height: 442px;
+    width: 375px;
+}
+#segundaMitad{ 
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 16px 16px 0px 0px;
+}
+
+#backArrow {
+    margin: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 180px;
+    padding: 5px;
+}
+#backArrow:hover {
+    background-color: grey;
+}
+#bloqueOneDatos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#bloqueOneDatos h3{
+    display: flex;
+    
+}
+#bloqueOneDatos h3 img{
+    
+    margin-left: 10px;
+}
+#likeButton{
+    margin-right: 10px;
+    background: white;
+    padding: 5px;
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349); 
+}
+
+#likeButton img {
+    padding: 10px 10px 5px 10px;
+     
+}
+#bloqueTwoDatos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+#bloqueTwoDatos p img{
+    margin-right: 10px;
+}
+#bloqueDosOne{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+#bloqueDosSecond{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: 20px;
+}
+#bloqueDosThird p{
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    width:70%;
+    
+}
+
+#bloqueContacto{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#botonContacto{
+    width: 50%;
+}
+#botonContacto button{
+    width: 100%;
+    padding: 8px 20px;
+    border-radius: 30px;
+    color: white;
+    background-color: var(--color-botones);
+}
+#publicacion{
+    width: 50%;
+}

@@ -14,28 +14,6 @@ let firstTwoComponents = [
     urlImg: 'img/index/Adoptado.png',
     texto: 'Adoptar puede ser una de las experiencias más grandiosas de tu vida, donde compartirás bellos momentos con estos amiguitos fieles, tiernos y llenos de amor para regalar.'}
 ]
-
-/* let firstComponent = () => {
-  $contenedor.innerHTML = `
-    <div class="card">
-        <img loading="lazy" src="img/esperandoAdopcion.png" alt="puppiePhoto">
-        <h3>Encuentra tu amigo </h3>
-        <p>Cuando adoptas a una mascota, cosas maravillosas suceden en tu vida. Si estás pensando en tener un nuevo integrante en tu familia; ¡estás en el lugar correcto!</p><button id="button">Siguiente</button>
-    <div>
-    `
-  button = document.getElementById('button')
-}
-let segundoComponent = () => {
-  console.log('click')
-  $contenedor.innerHTML = `
-  <div class="card">
-    <img loading="lazy" src="img/Adoptado.png" alt="puppiePhoto">
-    <h3>Crea una nueva historia </h3>
-    <p>Adoptar puede ser una de las experiencias más grandiosas de tu vida, donde compartirás bellos momentos con estos amiguitos fieles, tiernos y llenos de amor para regalar.</p><button id="button">Siguiente</button>
-   <div>
-  `
-}
- */
 const htmlCreator = (urlImg, titulo, texto) => {
   $contenedor.innerHTML = ''
   $contenedor.innerHTML = `
@@ -64,14 +42,15 @@ const addHtml = (id) => {
 
 let y = () => setTimeout(function () {
   addHtml(0)
-}, 1000)
+}, 300)
+
 
 const addEvent = (id, func) => {
   let button = document.getElementById(id)
   button.addEventListener('click', e => {
     func(1)
   })
-  console.log('Evento añadido', func)
+  console.log('Evento añadido')
   repetition += 1
 }
 logo.addEventListener('mouseenter', e => {
