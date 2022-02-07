@@ -184,11 +184,13 @@ footer{
   display: grid;
   grid-template-columns: auto auto;
   gap: 15px;
+  margin-bottom: 100px;
 }
 #contenedorPerros {
   display: grid;
   grid-template-columns: auto auto;
   gap: 15px;
+  margin-bottom: 100px;
 }
 
 #contenedorGatos {
