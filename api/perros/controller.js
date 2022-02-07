@@ -33,11 +33,8 @@ export const getDetailDog = (id, lugarInsertar) => {
   setTimeout(() => {
     let arrow = document.getElementById("backArrow")
     arrow.onclick = () => pagPrincipal()
-    let likeButton = document.getElementById("likeButton")
-    likeButton.onclick = () => {
-      addToFav(data)
-      likeButton.firstElementChild.src = "img/detail/like1.png"
-    };
+   
+      
 
     }, 200);
 

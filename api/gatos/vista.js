@@ -56,5 +56,5 @@ export const addtoDOM = (contenedor, contenedorAnterior, lugarInsertar) => {
 export const insertDetail = (htmlfragment, lugarInsertar) => {
   lugarInsertar.innerHTML = ''
   lugarInsertar.appendChild(htmlfragment);
-  console.log("done yolo xd");
+ 
 }

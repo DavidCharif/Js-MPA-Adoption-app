@@ -288,6 +288,7 @@ ul {
     cursor: pointer;
 }
 
+
 #likeButton img {
     padding: 10px 10px 5px 10px;
      
@@ -337,4 +338,9 @@ ul {
 }
 #publicacion{
     width: 50%;
+}
+#contenedorFav{
+    display: grid;
+    grid-template-columns:auto auto;
+    gap: 15px;        
 }
