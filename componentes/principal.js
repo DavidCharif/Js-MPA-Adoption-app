@@ -128,10 +128,12 @@ const detalle = (ele, lugarInsertar) => {
 
 }
 export const addEvents = (array, lugarInsertar) => {
+if(array != null){
   for (let i = 0; i < array.length; i++) {
     console.log('evento add')
     array[i].addEventListener('click', (e) => detalle(e, lugarInsertar))
   }
+}
 }
 
 /* export const crearContenedorData = (data) => {

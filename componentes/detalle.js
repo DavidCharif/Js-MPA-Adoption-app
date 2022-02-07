@@ -108,15 +108,15 @@ export const openDetail = obj => {
     if(localStorage.length == 0){
       console.log('vacio');
       favlike.classList.add('click')
-      favlike.src='/img/detail/like.png'
+      favlike.src='img/detail/like.png'
     } else {
-      favlike.src='/img/detail/like.png'
+      favlike.src='img/detail/like.png'
       let objLocal = JSON.parse(localStorage.getItem('fav'));
         
       /* console.log('first', Object.values(objLocal)); */
       objLocal.forEach(element => {
         if(element.id == obj.id && element.tipo == obj.tipo){ 
-          favlike.src="/img/detail/like1.png"
+          favlike.src="img/detail/like1.png"
           console.log('Esta en fav');
           fav = true
         } 
