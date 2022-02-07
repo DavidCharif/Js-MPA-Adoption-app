@@ -24,7 +24,7 @@ export const goToFav = (container) => {
   }
 
   setTimeout(() => {
-    footerGenerator(contenedor, 3)
+    footerGenerator(container, 3)
     let ContainerMensajes = document.getElementById('ContainerMensajes')
     let ContainerFav = document.getElementById('ContainerFav')
     let ContainerProfile = document.getElementById('ContainerProfile')
