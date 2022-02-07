@@ -8,7 +8,7 @@ import { openDetail, addToFav } from '../../componentes/detalle.js'
 export let contenedorPerro
 let dataPerros
 let i = 0
-export const getResPerros = async (textoCategorias,data) => {
+export const getResPerros = async (textoCategorias,cards, lugarInsertar) => {
 
   if (dataPerros == null) {
     dataPerros = await getData(urlPerros)
@@ -19,7 +19,7 @@ export const getResPerros = async (textoCategorias,data) => {
   contenedorPerro = drawCard(dataPerros)
   addtoDOM(contenedorPerro, containerGato, textoCategorias)
   if(i == 0){
-    addEvents(data)
+    addEvents(cards, lugarInsertar)
     i++
   } 
 }
@@ -33,9 +33,6 @@ export const getDetailDog = (id, lugarInsertar) => {
   setTimeout(() => {
     let arrow = document.getElementById("backArrow")
     arrow.onclick = () => pagPrincipal()
-   
-      
-
     }, 200);
 
 }

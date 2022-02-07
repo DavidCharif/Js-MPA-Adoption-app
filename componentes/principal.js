@@ -51,7 +51,7 @@ export const pagPrincipal = () => {
   setTimeout(() => {
     
     let cards = document.getElementsByClassName('card')
-    getResPerros(textoCategorias, cards)
+    getResPerros(textoCategorias, cards, $contenedor)
     
     dog = true
     cat = false
@@ -63,7 +63,7 @@ export const pagPrincipal = () => {
       console.log('Click en gatos')
 
       if (document.getElementById('contenedorGatos') == null) {
-        getResGatos(textoCategorias, cards)
+        getResGatos(textoCategorias, cards, $contenedor)
        }
       dog = false
       cat = true
@@ -75,7 +75,7 @@ export const pagPrincipal = () => {
       botonGatos.style.opacity = '50%'
       console.log('Click en perros')
       if (document.getElementById('contenedorPerros') == null) {
-        getResPerros(textoCategorias, cards)
+        getResPerros(textoCategorias, cards, $contenedor)
         
       }
       dog = true
@@ -114,22 +114,28 @@ export const pagPrincipal = () => {
     })
   }, 300)
 }
-const detalle = (ele) => {
+const detalle = (ele, lugarInsertar) => {
   let idCard = ele.target.getAttribute('data-value')
+  let tipo = ele.target.getAttribute('tipo')
+  if(tipo == 'dog'){
+    getDetailDog(idCard, lugarInsertar)
+  } else {
+    getDetailCat(idCard, lugarInsertar)
+  } /* 
   if(dog){
-    getDetailDog(idCard, $contenedor)
+    getDetailDog(idCard, lugarInsertar)
     
   } else if (cat){
-    getDetailCat(idCard, $contenedor)
-  }
+    getDetailCat(idCard, lugarInsertar)
+  } */
   
   
 
 }
-export const addEvents = (array) => {
+export const addEvents = (array, lugarInsertar) => {
   for (let i = 0; i < array.length; i++) {
     console.log('evento add')
-    array[i].addEventListener('click', (e) => detalle(e), false)
+    array[i].addEventListener('click', (e) => detalle(e, lugarInsertar))
   }
 }
 

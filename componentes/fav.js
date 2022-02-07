@@ -1,6 +1,8 @@
 import { footerGenerator } from './footer.js';
-import { pagPrincipal } from './principal.js';
+import { addEvents, pagPrincipal } from './principal.js';
 let containerFav
+let cards
+let contenedor
 
 export const goToFav = (container) => {
   let data = JSON.parse(localStorage.getItem('fav'));
@@ -12,7 +14,8 @@ export const goToFav = (container) => {
     </div></div>`
     if(data != null){
       let contenedores = drawCard(data)
-      let contenedor = document.getElementById('contenedorPrincipal')
+      contenedor = document.getElementById('contenedorPrincipal')
+     
       console.log('contenedoresDibujados', contenedores);
       contenedor.appendChild(contenedores)
     } else {
@@ -41,6 +44,8 @@ export const goToFav = (container) => {
   })
   console.log('Esperos todo se haya impreso bien');
   }, 50);
+
+  addEvents(cards, contenedor)
   
 }
 
@@ -75,6 +80,8 @@ const drawCard = (data) => {
     })
     contenedorDataNew.append(divIzq, divDer)
     containerFav = contenedorDataNew
+    cards = document.getElementsByClassName('card')
+    console.log('cards', cards);
     
     return containerFav
   }

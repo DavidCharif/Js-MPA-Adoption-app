@@ -9,7 +9,8 @@
     "Personalidad":["Jugueton","Inquieto","Tranquilo"],
     "historia":"Rocky es un perrito muy lindo y cariñoso, tiene 5 hermanitos más y por cuestiones de espacio y tiempo no podremos cuidar a todos, nuestra misión es encontrar la familia ideal para él y seguro que tú eres la persona indicada.",
     "urlImg":"img/dog/01.png",
-    "publicado":"Maria Dolores"
+    "publicado":"Maria Dolores",
+    "tipo":"dog"
   },{
     "id":2,
     "nombre":"Papi",
@@ -20,7 +21,8 @@
     "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
     "historia":"lorem ipsum",
     "urlImg":"img/dog/02.png",
-    "publicado":"Maria Dolores"
+    "publicado":"Maria Dolores",
+    "tipo":"dog"
   },{
     "id":3,
     "nombre":"Pelusa",
@@ -31,7 +33,8 @@
     "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
     "historia":"lorem ipsum",
     "urlImg":"img/dog/03.png",
-    "publicado":"Maria Dolores"
+    "publicado":"Maria Dolores",
+    "tipo":"dog"
   },{
     "id":4,
     "nombre":"Chester",
@@ -42,7 +45,8 @@
     "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
     "historia":"lorem ipsum",
     "urlImg":"img/dog/04.png",
-    "publicado":"Maria Dolores"
+    "publicado":"Maria Dolores",
+    "tipo":"dog"
   }],
   "gatos":[{
     "id":"1",
@@ -54,7 +58,8 @@
     "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
     "historia":"Matilde es la mejor guarda espaldas, siempre esta hay para conversar y recibirá cada día con un fuerte cariño. Fue rescatada y busco una persona que le pueda dar todo el amor que ella necesita.",
     "urlImg":"img/cat/01.png",
-    "publicado":"Juan Jesus"
+    "publicado":"Juan Jesus",
+    "tipo":"cat"
   },{
     "id":"2",
     "nombre":"Pelusa",
@@ -65,7 +70,8 @@
     "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
     "historia":"lorem ipsum",
     "urlImg":"img/cat/02.png",
-    "publicado":"Juan Jesus"
+    "publicado":"Juan Jesus",
+    "tipo":"cat"
   },{
     "id":"3",
     "nombre":"Kity",
@@ -76,7 +82,8 @@
     "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
     "historia":"lorem ipsum",
     "urlImg":"img/cat/03.png",
-    "publicado":"Juan Jesus"
+    "publicado":"Juan Jesus",
+    "tipo":"cat"
   },{
     "id":"4",
     "nombre":"Bombón",
@@ -87,6 +94,7 @@
     "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
     "historia":"lorem ipsum",
     "urlImg":"img/cat/04.png",
-    "publicado":"Juan Jesus"
+    "publicado":"Juan Jesus",
+    "tipo":"cat"
   }]
 }

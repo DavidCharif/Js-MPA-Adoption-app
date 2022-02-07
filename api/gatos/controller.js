@@ -8,14 +8,14 @@ import { containerPerro } from '../perros/vista.js'
 let contenedorGato
 let dataGatos
 let i = 0;
-export const getResGatos = async (textoCategorias, data) => {
+export const getResGatos = async (textoCategorias, data, lugarInsertar) => {
   if (dataGatos == null) {
     dataGatos = await getData(urlGatos)
   }
   contenedorGato = drawCard(dataGatos)
   addtoDOM(contenedorGato, containerPerro, textoCategorias)
   if(i == 0){
-    addEvents(data)
+    addEvents(data, lugarInsertar)
     i++
   }
 
