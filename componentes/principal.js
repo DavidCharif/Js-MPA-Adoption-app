@@ -13,8 +13,7 @@ let ContainerProfile  */
 export const $contenedor = document.querySelector('body')
 
 export const pagPrincipal = () => {
-  $contenedor.innerHTML = ''
-  $contenedor.innerHTML += `
+  $contenedor.innerHTML = `
       <div id="contenedorPrincipal" >
 
         <div id="boxTitulo">
@@ -46,6 +45,7 @@ export const pagPrincipal = () => {
   textoCategorias = document.querySelector('.clear')
   let botonPerros = document.querySelector('#perros')
   let botonGatos = document.querySelector('#gatos')
+
   setTimeout(() => {
     let cards = document.getElementsByClassName('card')
     getResPerros(textoCategorias, cards, $contenedor)
@@ -101,8 +101,9 @@ export const pagPrincipal = () => {
       console.log('Profile')
       goToProfile($contenedor)
     })
-  }, 300)
+  }, 50)
 }
+
 const detalle = (ele, lugarInsertar) => {
   let idCard = ele.target.getAttribute('data-value')
   let tipo = ele.target.getAttribute('tipo')
