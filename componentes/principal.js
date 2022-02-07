@@ -1,9 +1,8 @@
-import { getResGatos, getDetailCat} from '../api/gatos/controller.js'
-import { getResPerros, getDetailDog} from '../api/perros/controller.js'
-import { goToFav } from './fav.js';
+import { getResGatos, getDetailCat } from '../api/gatos/controller.js'
+import { getResPerros, getDetailDog } from '../api/perros/controller.js'
+import { goToFav } from './fav.js'
 import { footerGenerator } from './footer.js'
-import { goToProfile } from './profile.js';
-
+import { goToProfile } from './profile.js'
 
 let textoCategorias
 /*
@@ -43,17 +42,13 @@ export const pagPrincipal = () => {
 
       <div class="clear"></div>     
   `
-  
 
   textoCategorias = document.querySelector('.clear')
   let botonPerros = document.querySelector('#perros')
   let botonGatos = document.querySelector('#gatos')
   setTimeout(() => {
-    
     let cards = document.getElementsByClassName('card')
     getResPerros(textoCategorias, cards, $contenedor)
-   
-       
 
     botonGatos.addEventListener('click', async (e) => {
       botonGatos.style.opacity = '100%'
@@ -62,9 +57,8 @@ export const pagPrincipal = () => {
 
       if (document.getElementById('contenedorGatos') == null) {
         getResGatos(textoCategorias, cards, $contenedor)
-       }
-     
-    
+      }
+
       footerGenerator($contenedor, 1)
     })
     botonPerros.addEventListener('click', async (e) => {
@@ -73,11 +67,9 @@ export const pagPrincipal = () => {
       console.log('Click en perros')
       if (document.getElementById('contenedorPerros') == null) {
         getResPerros(textoCategorias, cards, $contenedor)
-        
       }
-      
+
       footerGenerator($contenedor, 1)
-      
     })
     footerGenerator($contenedor, 1)
     let ContainerMensajes = document.getElementById('ContainerMensajes')
@@ -86,7 +78,7 @@ export const pagPrincipal = () => {
     let ContainerHome = document.getElementById('ContainerHome')
 
     ContainerHome.addEventListener('click', (e) => {
-      /* ContainerHome.innerHTML += '<p>Home</p>' 
+      /* ContainerHome.innerHTML += '<p>Home</p>'
     let classList =  ContainerHome.parentNode.classList;
     classList = Array.from(classList)
     if (classList.includes('active')){
@@ -114,28 +106,24 @@ export const pagPrincipal = () => {
 const detalle = (ele, lugarInsertar) => {
   let idCard = ele.target.getAttribute('data-value')
   let tipo = ele.target.getAttribute('tipo')
-  if(tipo == 'dog'){
+  if (tipo === 'dog') {
     getDetailDog(idCard, lugarInsertar)
   } else {
     getDetailCat(idCard, lugarInsertar)
-  } /* 
-  if(dog){
+  } /*   if(dog){
     getDetailDog(idCard, lugarInsertar)
-    
+
   } else if (cat){
     getDetailCat(idCard, lugarInsertar)
   } */
-  
-  
-
 }
 export const addEvents = (array, lugarInsertar) => {
-if(array != null){
-  for (let i = 0; i < array.length; i++) {
-    console.log('evento add')
-    array[i].addEventListener('click', (e) => detalle(e, lugarInsertar))
+  if (array != null) {
+    for (let i = 0; i < array.length; i++) {
+      console.log('evento add')
+      array[i].addEventListener('click', (e) => detalle(e, lugarInsertar))
+    }
   }
-}
 }
 
 /* export const crearContenedorData = (data) => {

@@ -148,19 +148,14 @@ export const footerGenerator = (contenedor, num) => {
 /*  <footer>
       <ul>
       <li>
-      
-      
-      <a class="active" href="#home">
       <div style="display:flex" id="ContainerHome" class="footerContainer">
-      
-      <img id="home" src="/img/footer/home.svg">
-      
-      </div>
+         <img id="home" src="/img/footer/home.svg">
+       </div>
       </a>
       </li>
       <li><a href="#news">
       <div style="display:flex" id="ContainerMensajes" class="footerContainer">
-      <img src="/img/footer/mensajes.svg">  
+      <img src="/img/footer/mensajes.svg">
       </div>
       </a></li>
       <li><a href="#contact">
