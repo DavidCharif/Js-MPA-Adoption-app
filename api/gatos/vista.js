@@ -12,21 +12,21 @@ export const drawCard = (data) => {
     contenedorDataNew.style.translate = '2s'
     let i = 1
     data.forEach((each) => {
-      let { nombre, raza, urlImg, tipo } = each
+      let { nombre, raza, urlImg, tipo, id } = each
       i % 2
         ? (divIzq.innerHTML += `
-      <div class="card" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 26.42%, #000000 99.33%), url(${urlImg}); background-size: cover; " data-value="${i}" tipo="${tipo}">
+      <div class="card" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 26.42%, #000000 99.33%), url(${urlImg}); background-size: cover; " data-value="${id}" tipo="${tipo}">
       <div id="textCard">
-      <div data-value="${i}" id="nombre">${nombre}</div>
-      <div data-value="${i}" id="raza">${raza}</div>
+      <div data-value="${id}" tipo="${tipo}" id="nombre">${nombre}</div>
+      <div data-value="${id}" tipo="${tipo}"  id="raza">${raza}</div>
       </div>
       </div>
       `)
         : (divDer.innerHTML += `
-      <div class="card" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 26.42%, #000000 99.33%), url(${urlImg}); background-size: cover;" data-value="${i}" tipo="${tipo}">     
+      <div class="card" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 26.42%, #000000 99.33%), url(${urlImg}); background-size: cover;" data-value="${id}" tipo="${tipo}">     
       <div id="textCard">
-      <div id="nombre" data-value="${i}">${nombre}</div>
-      <div id="raza" data-value="${i}">${raza}</div>
+      <div id="nombre" data-value="${id}" tipo="${tipo}">${nombre}</div>
+      <div id="raza" data-value="${id}" tipo="${tipo}">${raza}</div>
       </div>
       </div>
       `)

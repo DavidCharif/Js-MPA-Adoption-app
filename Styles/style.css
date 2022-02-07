@@ -42,6 +42,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 375px;
 }
 
 #text {
@@ -95,7 +96,7 @@ ul {
   left: 0;
   justify-content: space-evenly;
   align-items: center;
-
+  min-width: 375px;
   padding-inline-start: 0px;
 }
 
@@ -127,6 +128,9 @@ li a:hover:not(.active) {
   font-size: 14px;
   margin-left: 10px;
 }
+footer{
+  width: 500px;
+}
 .active img {
   filter: invert(79%) sepia(21%) saturate(529%) hue-rotate(129deg)
     brightness(94%) contrast(92%);
@@ -153,7 +157,7 @@ li a:hover:not(.active) {
   display: flex;
   align-items: center;
   cursor: pointer;
-  width: 130px;
+  min-width: 130px;
 }
 .categoria:active {
   opacity: 50%;
@@ -181,14 +185,15 @@ li a:hover:not(.active) {
 }
 
 #contenedorGatos {
-  height: 600px;
+  
   transition: 0.5s;
 }
 #contenedorPerros {
-  height: 600px;
   transition: 0.5s;
 }
-
+.clear{
+  min-width: 400px;
+}
 #contenedorDerecha {
   margin-top: 15px;
 }

@@ -1,5 +1,5 @@
 let localObj
-let resultadoIsInFav
+
 let like
 let favlike
 
@@ -30,12 +30,11 @@ let favlike
       resultadoIsInFav = 'like'
      }  */
 
-/*    }); 
+/*    });
    console.log('res', resultadoIsInFav);
  } */
 
 export const openDetail = (obj) => {
-  console.log('resultadoIsInFav', resultadoIsInFav)
   let {
     nombre,
     urlImg,
@@ -45,8 +44,7 @@ export const openDetail = (obj) => {
     personalidad,
     direccion,
     historia,
-    publicado,
-    tipo
+    publicado
   } = obj
 
   let docFragment = document.createDocumentFragment()
@@ -101,7 +99,7 @@ export const openDetail = (obj) => {
     favlike = document.getElementById('favButton')
     like = document.getElementById('likeButton')
     let fav = false
-    if (localStorage.length == 0) {
+    if (localStorage.getItem('fav') === null) {
       console.log('vacio')
       favlike.classList.add('click')
       favlike.src = 'img/detail/like.png'
@@ -111,7 +109,7 @@ export const openDetail = (obj) => {
 
       /* console.log('first', Object.values(objLocal)); */
       objLocal.forEach((element) => {
-        if (element.id == obj.id && element.tipo == obj.tipo) {
+        if (element.id === obj.id && element.tipo === obj.tipo) {
           favlike.src = 'img/detail/like1.png'
           console.log('Esta en fav')
           fav = true
@@ -120,7 +118,7 @@ export const openDetail = (obj) => {
     }
     console.log('fav', fav)
     like.onclick = () => {
-      if (fav == false) {
+      if (fav === false) {
         console.log('agregando')
         addToFav(obj)
         favlike.src = 'img/detail/like1.png'
@@ -128,7 +126,7 @@ export const openDetail = (obj) => {
       } else {
         if (localStorage.length != 0) {
           console.log('removiendo')
-          if (fav == true) {
+          if (fav === true) {
             removeFav(obj)
             favlike.src = 'img/detail/like.png'
             fav = false
@@ -145,7 +143,7 @@ export const openDetail = (obj) => {
 }
 
 export const addToFav = (obj) => {
-  if (localStorage.length == 0) {
+  if (localStorage.getItem('fav') === null) {
     console.log('Local storage vacio')
     let arrayFav = []
     arrayFav.unshift(obj)
@@ -167,8 +165,8 @@ const removeFav = (obj) => {
   console.log('Objeto eliminado')
 }
 const isInFav = (obj) => {
-  if (localStorage.length == 0) {
-    console.log('vacio')
+  if (localStorage.getItem('fav') === null) {
+    console.log('Local storage vacio')
   } else {
     let objLocal = JSON.parse(localStorage.getItem('fav'))
     favlike = document.getElementById('favButton')
@@ -176,7 +174,7 @@ const isInFav = (obj) => {
     Object.values(objLocal).forEach((element) => {
       if (element.id === obj.id) {
         favlike.classList.add('click')
-        console.log('Esta en fav')
+        /* console.log('Esta en fav') */
       } else {
         favlike.classList.remove('click')
       }

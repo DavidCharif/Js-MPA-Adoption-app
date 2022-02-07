@@ -45,7 +45,7 @@ export const goToFav = (container) => {
     console.log('Esperos todo se haya impreso bien')
   }, 50)
 
-  addEvents(cards, contenedor)
+  addEvents(cards, container)
 }
 
 const drawCard = (data) => {

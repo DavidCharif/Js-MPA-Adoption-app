@@ -18,16 +18,16 @@ export const drawCard = (data) => {
         ? (divIzq.innerHTML += `
       <div class="card" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 26.42%, #000000 99.33%), url(${urlImg}); background-size: cover;" data-value="${id}" tipo="${tipo}">
       <div id="textCard">
-      <div id="nombre" data-value="${id}">${nombre}</div>
-      <div id="raza" data-value="${id}">${raza}</div>
+      <div id="nombre" data-value="${id}" tipo="${tipo}">${nombre}</div>
+      <div id="raza" data-value="${id}" tipo="${tipo}">${raza}</div>
       </div>
       </div>
       `)
         : (divDer.innerHTML += `
       <div class="card" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 26.42%, #000000 99.33%), url(${urlImg}); background-size: cover;" data-value="${id}" tipo="${tipo}">
       <div id="textCard" >
-      <div id="nombre" data-value="${id}">${nombre}</div>
-      <div id="raza" data-value="${id}">${raza}</div>
+      <div id="nombre" data-value="${id}" tipo="${tipo}">${nombre}</div>
+      <div id="raza" data-value="${id}" tipo="${tipo}">${raza}</div>
       </div>
       </div>
       `)

@@ -53,7 +53,7 @@ export const pagPrincipal = () => {
     botonGatos.addEventListener('click', async (e) => {
       botonGatos.style.opacity = '100%'
       botonPerros.style.opacity = '50%'
-      console.log('Click en gatos')
+      /* console.log('Click en gatos') */
 
       if (document.getElementById('contenedorGatos') == null) {
         getResGatos(textoCategorias, cards, $contenedor)
