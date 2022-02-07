@@ -1,6 +1,6 @@
 import {pagPrincipal} from './componentes/principal.js'
 
-let $contenedor = document.getElementById('contenedor')
+let $contenedor = document.querySelector('body')
 let logo = document.getElementById('logo')
 let repetition = 0
 let firstTwoComponents = [
@@ -17,12 +17,18 @@ let firstTwoComponents = [
 const htmlCreator = (urlImg, titulo, texto) => {
   $contenedor.innerHTML = ''
   $contenedor.innerHTML = `
-  <div class="cardInicial">
-    <img loading="lazy" src="${urlImg}" alt="puppiePhoto">
+  <div id="contenedorPrincipal">
+    <div class="cardInicial img">
+      <img loading="lazy" src="${urlImg}" alt="puppiePhoto">
+    </div>
+    <div id="text">
     <h3>${titulo}</h3>
-    <p>${texto}</p> 
+    <p>${texto}</p>
+    </div>
+    <div id="buttonInicio"> 
     <button type="button" id="button">Siguiente</button>
-   <div>
+    </div>
+  <div>
   `
   /* let button = document.getElementById('button')
   button.addEventListener('click', addHtml(1)) */

@@ -2,6 +2,7 @@ import { getResGatos, getDetailCat} from '../api/gatos/controller.js'
 import { getResPerros, getDetailDog} from '../api/perros/controller.js'
 import { goToFav } from './fav.js';
 import { footerGenerator } from './footer.js'
+import { goToProfile } from './profile.js';
 
 
 let textoCategorias
@@ -106,6 +107,7 @@ export const pagPrincipal = () => {
     })
     ContainerProfile.addEventListener('click', (e) => {
       console.log('Profile')
+      goToProfile($contenedor)
     })
   }, 300)
 }

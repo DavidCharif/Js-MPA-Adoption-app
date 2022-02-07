@@ -1,5 +1,6 @@
 import { footerGenerator } from './footer.js';
 import { addEvents, pagPrincipal } from './principal.js';
+import { goToProfile } from './profile.js';
 let containerFav
 let cards
 let contenedor
@@ -40,7 +41,7 @@ export const goToFav = (container) => {
     console.log("Ya estamos aca");
   })
   ContainerProfile.addEventListener('click', (e) => {
-    console.log('Profile')
+    goToProfile(container)
   })
   console.log('Esperos todo se haya impreso bien');
   }, 50);

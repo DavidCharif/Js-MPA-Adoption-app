@@ -129,14 +129,14 @@ export const openDetail = obj => {
       if(fav == false){
         console.log("agregando");
         addToFav(obj)
-        favlike.src="/img/detail/like1.png"
+        favlike.src="img/detail/like1.png"
         fav = true
       } else {
         if(localStorage.length != 0){
         console.log("removiendo");
         if(fav == true){
           removeFav(obj)
-          favlike.src='/img/detail/like.png'
+          favlike.src='img/detail/like.png'
           fav = false
         }
         
@@ -175,7 +175,8 @@ export const addToFav = (obj) => {
 const removeFav = (obj) => {
     let newArray;
     localObj = JSON.parse(localStorage.getItem('fav'));
-    newArray = localObj.filter((element) => element.id !== obj.id && element.tipo !== obj.tipo)
+    newArray = localObj.filter((element) => element.id !== obj.id)
+    console.log('newArray', newArray);
     localStorage.setItem('fav',JSON.stringify(newArray))
     console.log('Objeto eliminado');
 }
