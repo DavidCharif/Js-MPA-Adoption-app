@@ -22,7 +22,7 @@ export const getResGatos = async (textoCategorias, data, lugarInsertar) => {
 
 export const getDetailCat = async (id, lugarInsertar) => {
   dataGatos = await getData(urlGatos)
-  console.log('data', dataGatos)
+  /* console.log('data', dataGatos) */
   let data = dataGatos[id - 1]
 
   let fragmentHtml = openDetail(data)

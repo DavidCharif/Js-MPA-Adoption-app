@@ -113,7 +113,14 @@ li a {
 }
 
 li a:hover:not(.active) {
-  background-color: #111;
+  background-color: rgb(255, 255, 255);
+ 
+
+}
+li a img:hover:not(.active) {
+  
+  filter: invert(79%) sepia(21%) saturate(529%) hue-rotate(129deg)
+
 }
 
 .active {

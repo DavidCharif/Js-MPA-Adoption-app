@@ -17,7 +17,7 @@ export const goToFav = (container) => {
     let contenedores = drawCard(data)
     contenedor = document.getElementById('contenedorPrincipal')
 
-    console.log('contenedoresDibujados', contenedores)
+    /* console.log('contenedoresDibujados', contenedores) */
     contenedor.appendChild(contenedores)
   } else {
     console.log('No hay favs')
@@ -42,7 +42,7 @@ export const goToFav = (container) => {
     ContainerProfile.addEventListener('click', (e) => {
       goToProfile(container)
     })
-    console.log('Esperos todo se haya impreso bien')
+    /* console.log('Espero todo se haya impreso bien') */
   }, 50)
 
   addEvents(cards, container)

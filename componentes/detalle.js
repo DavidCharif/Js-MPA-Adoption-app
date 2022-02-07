@@ -100,7 +100,7 @@ export const openDetail = (obj) => {
     like = document.getElementById('likeButton')
     let fav = false
     if (localStorage.getItem('fav') === null) {
-      console.log('vacio')
+      /*  console.log('vacio') */
       favlike.classList.add('click')
       favlike.src = 'img/detail/like.png'
     } else {
@@ -111,21 +111,21 @@ export const openDetail = (obj) => {
       objLocal.forEach((element) => {
         if (element.id === obj.id && element.tipo === obj.tipo) {
           favlike.src = 'img/detail/like1.png'
-          console.log('Esta en fav')
+          /*  console.log('Esta en fav') */
           fav = true
         }
       })
     }
-    console.log('fav', fav)
+    /* console.log('fav', fav) */
     like.onclick = () => {
       if (fav === false) {
-        console.log('agregando')
+        /* console.log('agregando') */
         addToFav(obj)
         favlike.src = 'img/detail/like1.png'
         fav = true
       } else {
         if (localStorage.length != 0) {
-          console.log('removiendo')
+          /* console.log('removiendo') */
           if (fav === true) {
             removeFav(obj)
             favlike.src = 'img/detail/like.png'
@@ -144,10 +144,10 @@ export const openDetail = (obj) => {
 
 export const addToFav = (obj) => {
   if (localStorage.getItem('fav') === null) {
-    console.log('Local storage vacio')
+    /* console.log('Local storage vacio') */
     let arrayFav = []
     arrayFav.unshift(obj)
-    console.log('arrayFav', arrayFav)
+    /* console.log('arrayFav', arrayFav) */
     localStorage.setItem('fav', JSON.stringify(arrayFav))
   } else {
     localObj = JSON.parse(localStorage.getItem('fav'))
@@ -157,12 +157,35 @@ export const addToFav = (obj) => {
 }
 
 const removeFav = (obj) => {
-  let newArray
   localObj = JSON.parse(localStorage.getItem('fav'))
-  newArray = localObj.filter((element) => element.id !== obj.id)
-  console.log('newArray', newArray)
+  let newArray = []
+  /*  localObj.forEach((ele) => {
+    if (ele.tipo === obj.tipo) {
+      console.log('ele.tipo', ele.tipo)
+      if (ele.id === obj.id) {
+        console.log(ele.nombre, ' se va a remover')
+      }
+    } else {
+      console.log('push')
+      newArray.push(ele)
+    } */
+
+  localObj.forEach((ele) => {
+    if (ele.id === obj.id && ele.tipo === obj.tipo) {
+      console.log(ele.nombre, 'este se va a remover')
+    } else {
+      console.log('push')
+      newArray.push(ele)
+    }
+
+    /* let newArray = localObj.filter((element) => {
+    console.log(element.id !== obj.id && element.tipo === obj.tipo)
+    element.tipo !== obj.tipo && element.id !== obj.id
+  }) */
+    /* console.log('newArray', newArray) */
+    /* console.log('Objeto eliminado') */
+  })
   localStorage.setItem('fav', JSON.stringify(newArray))
-  console.log('Objeto eliminado')
 }
 const isInFav = (obj) => {
   if (localStorage.getItem('fav') === null) {
