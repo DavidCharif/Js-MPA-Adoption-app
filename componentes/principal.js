@@ -3,8 +3,7 @@ import { getResPerros, getDetailDog} from '../api/perros/controller.js'
 import { goToFav } from './fav.js';
 import { footerGenerator } from './footer.js'
 
-let dog ;
-let cat ;
+
 let textoCategorias
 /*
 let ContainerFav
@@ -52,9 +51,7 @@ export const pagPrincipal = () => {
     
     let cards = document.getElementsByClassName('card')
     getResPerros(textoCategorias, cards, $contenedor)
-    
-    dog = true
-    cat = false
+   
        
 
     botonGatos.addEventListener('click', async (e) => {
@@ -65,9 +62,8 @@ export const pagPrincipal = () => {
       if (document.getElementById('contenedorGatos') == null) {
         getResGatos(textoCategorias, cards, $contenedor)
        }
-      dog = false
-      cat = true
-      console.log('dog, cat', dog, cat);
+     
+    
       footerGenerator($contenedor, 1)
     })
     botonPerros.addEventListener('click', async (e) => {
@@ -78,10 +74,9 @@ export const pagPrincipal = () => {
         getResPerros(textoCategorias, cards, $contenedor)
         
       }
-      dog = true
-      cat = false
+      
       footerGenerator($contenedor, 1)
-      console.log('dog, cat', dog, cat);
+      
     })
     footerGenerator($contenedor, 1)
     let ContainerMensajes = document.getElementById('ContainerMensajes')

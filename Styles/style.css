@@ -89,7 +89,7 @@ body {
 }
 
 ul {
-    padding: 16px 24px;
+    
     height: 72px;
     display: flex;
     position: fixed;
@@ -342,5 +342,6 @@ ul {
 #contenedorFav{
     display: grid;
     grid-template-columns:auto auto;
-    gap: 15px;        
+    gap: 15px;    
+    margin-bottom: 100px;    
 }

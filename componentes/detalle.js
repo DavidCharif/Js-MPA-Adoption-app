@@ -48,7 +48,7 @@ export const openDetail = obj => {
      personalidad,
      direccion,
      historia,
-     publicado} = obj
+     publicado, tipo} = obj
   
    
   let docFragment =  document.createDocumentFragment()
@@ -115,7 +115,7 @@ export const openDetail = obj => {
         
       /* console.log('first', Object.values(objLocal)); */
       objLocal.forEach(element => {
-        if(element.id == obj.id){ 
+        if(element.id == obj.id && element.tipo == obj.tipo){ 
           favlike.src="/img/detail/like1.png"
           console.log('Esta en fav');
           fav = true
@@ -175,7 +175,7 @@ export const addToFav = (obj) => {
 const removeFav = (obj) => {
     let newArray;
     localObj = JSON.parse(localStorage.getItem('fav'));
-    newArray = localObj.filter((element) => element.id !== obj.id)
+    newArray = localObj.filter((element) => element.id !== obj.id && element.tipo !== obj.tipo)
     localStorage.setItem('fav',JSON.stringify(newArray))
     console.log('Objeto eliminado');
 }

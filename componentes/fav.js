@@ -24,7 +24,7 @@ export const goToFav = (container) => {
 
   
   setTimeout(() => {
-    footerGenerator(container,3)
+    footerGenerator(contenedor,3)
     let ContainerMensajes = document.getElementById('ContainerMensajes')
     let ContainerFav = document.getElementById('ContainerFav')
     let ContainerProfile = document.getElementById('ContainerProfile')
@@ -45,6 +45,7 @@ export const goToFav = (container) => {
   console.log('Esperos todo se haya impreso bien');
   }, 50);
 
+
   addEvents(cards, contenedor)
   
 }
@@ -60,19 +61,21 @@ const drawCard = (data) => {
     contenedorDataNew.style.translate = '2s'
     let i = 1
     data.forEach((each) => {
-      let {nombre, raza, urlImg} = each
+      let {id, nombre, raza, urlImg, tipo} = each
+      
+      
       i % 2 ? divIzq.innerHTML += `
-      <div class="card" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 26.42%, #000000 99.33%), url(${urlImg}); background-size: cover; " data-value="${i}">
+      <div class="card" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 26.42%, #000000 99.33%), url(${urlImg}); background-size: cover" data-value="${id}" tipo="${tipo}">
       <div id="textCard">
-      <div data-value="${i}" id="nombre">${nombre}</div>
-      <div data-value="${i}" id="raza">${raza}</div>
+      <div data-value="${id}" id="nombre">${nombre}</div>
+      <div data-value="${id}" id="raza">${raza}</div>
       </div>
       </div>
       ` : divDer.innerHTML += `
-      <div class="card" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 26.42%, #000000 99.33%), url(${urlImg}); background-size: cover;" data-value="${i}">     
+      <div class="card" style="background: linear-gradient(180deg, rgba(255, 255, 255, 0) 26.42%, #000000 99.33%), url(${urlImg}); background-size: cover;" data-value="${id}" tipo="${tipo}">     
       <div id="textCard">
-      <div id="nombre" data-value="${i}">${nombre}</div>
-      <div id="raza" data-value="${i}">${raza}</div>
+      <div id="nombre" data-value="${id}">${nombre}</div>
+      <div id="raza" data-value="${id}">${raza}</div>
       </div>
       </div>
       `
@@ -81,7 +84,6 @@ const drawCard = (data) => {
     contenedorDataNew.append(divIzq, divDer)
     containerFav = contenedorDataNew
     cards = document.getElementsByClassName('card')
-    console.log('cards', cards);
-    
+       
     return containerFav
   }

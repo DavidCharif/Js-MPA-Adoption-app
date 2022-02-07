@@ -1,6 +1,6 @@
 {
   "perros":[{
-    "id":1,
+    "id":"1",
     "nombre":"Rocky",
     "genero":"male",
     "raza":"Rottweiler",
@@ -12,7 +12,7 @@
     "publicado":"Maria Dolores",
     "tipo":"dog"
   },{
-    "id":2,
+    "id":"2",
     "nombre":"Papi",
     "genero":"male",
     "raza":"Chihuahua",
@@ -24,7 +24,7 @@
     "publicado":"Maria Dolores",
     "tipo":"dog"
   },{
-    "id":3,
+    "id":"3",
     "nombre":"Pelusa",
     "genero":"female",
     "raza":"Bichón frisé",
@@ -36,7 +36,7 @@
     "publicado":"Maria Dolores",
     "tipo":"dog"
   },{
-    "id":4,
+    "id":"4",
     "nombre":"Chester",
     "genero":"male",
     "raza":"Golden retriever",
