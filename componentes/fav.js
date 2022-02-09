@@ -8,9 +8,9 @@ let data
 
 
 export const goToFav = (container) => {
-  if(data == null){
+ 
     data = JSON.parse(localStorage.getItem('fav'))
-  }
+  
   
   container.innerHTML = ''
   container.innerHTML = `
