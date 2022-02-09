@@ -6,8 +6,9 @@ let cards
 let contenedor
 let data
 
+
 export const goToFav = (container) => {
-  if(Object.is(data,null)){
+  if(data == null){
     data = JSON.parse(localStorage.getItem('fav'))
   }
   
@@ -20,9 +21,9 @@ export const goToFav = (container) => {
   if (data != null) {
     let contenedores = drawCard(data)
     contenedor = document.getElementById('contenedorPrincipal')
-
     /* console.log('contenedoresDibujados', contenedores) */
     contenedor.appendChild(contenedores)
+    addEvents(cards, container)
   } else {
     console.log('No hay favs')
   }
@@ -49,7 +50,7 @@ export const goToFav = (container) => {
     /* console.log('Espero todo se haya impreso bien') */
   }, 50)
 
-  addEvents(cards, container)
+ 
 }
 
 const drawCard = (data) => {

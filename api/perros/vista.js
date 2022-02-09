@@ -50,6 +50,7 @@ export const addtoDOM = (
   }
   contenedor.style.transform = 'translateY(300px)'
   contenedor.style.opacity = '0%'
+  /* lugarInsertar.before(contenedor) */
   lugarInsertar.before(contenedor)
   setTimeout(() => {
     contenedor.style.transform = 'translateY(0px)'
