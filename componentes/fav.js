@@ -4,9 +4,13 @@ import { goToProfile } from './profile.js'
 let containerFav
 let cards
 let contenedor
+let data
 
 export const goToFav = (container) => {
-  let data = JSON.parse(localStorage.getItem('fav'))
+  if(Object.is(data,null)){
+    data = JSON.parse(localStorage.getItem('fav'))
+  }
+  
   container.innerHTML = ''
   container.innerHTML = `
   <div id="contenedorPrincipal">
