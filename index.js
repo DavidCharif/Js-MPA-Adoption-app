@@ -16,19 +16,21 @@ let firstTwoComponents = [
 ]
 const htmlCreator = (urlImg, titulo, texto) => {
   $contenedor.innerHTML = ''
-  $contenedor.innerHTML = `
+  $contenedor.innerHTML =/* html */ `
   <div id="contenedorPrincipal">
-    <div class="cardInicial img">
-      <img loading="lazy" src="${urlImg}" alt="puppiePhoto">
+    <div id="contenedorInicial">
+      <div class="cardInicial img">
+        <img loading="lazy" src="${urlImg}" alt="puppiePhoto">
+      </div>
+      <div id="text">
+        <h3>${titulo}</h3>
+        <p>${texto}</p>
+      </div>
+      <div id="buttonInicio"> 
+        <button type="button" id="button">Siguiente</button>
+      </div>
     </div>
-    <div id="text">
-    <h3>${titulo}</h3>
-    <p>${texto}</p>
-    </div>
-    <div id="buttonInicio"> 
-    <button type="button" id="button">Siguiente</button>
-    </div>
-  <div>
+  
   `
   /* let button = document.getElementById('button')
   button.addEventListener('click', addHtml(1)) */

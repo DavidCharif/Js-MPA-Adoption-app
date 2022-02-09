@@ -48,9 +48,6 @@ body {
 #text {
   padding: 35px;
 }
-#buttonInicio {
-  width: 90%;
-}
 
 #tituloPrincipal {
   font-size: large;
@@ -114,13 +111,9 @@ li a {
 
 li a:hover:not(.active) {
   background-color: rgb(255, 255, 255);
- 
-
 }
 li a img:hover:not(.active) {
-  
-  filter: invert(79%) sepia(21%) saturate(529%) hue-rotate(129deg)
-
+  filter: invert(79%) sepia(21%) saturate(529%) hue-rotate(129deg);
 }
 
 .active {
@@ -135,7 +128,7 @@ li a img:hover:not(.active) {
   font-size: 14px;
   margin-left: 10px;
 }
-footer{
+footer {
   width: 500px;
 }
 .active img {
@@ -150,7 +143,6 @@ footer{
 
 #boxTitulo h3 {
   align-items: flex-start;
-  margin-left: 0;
   font-weight: 800;
   font-size: 24px;
 }
@@ -180,29 +172,94 @@ footer{
   padding: 10px;
 }
 
-#contenedorGatos {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 15px;
-  margin-bottom: 100px;
+@media only screen and (min-width: 600px) {
+  #contenedorGatos {
+    display: flex;
+    gap: 10px;
+    transform: translateY(0px);
+    opacity: 1;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  #contenedorPerros {
+    display: flex;
+    gap: 10px;
+    transform: translateY(0px);
+    opacity: 1;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  #contenedorIzquierda {
+    display: flex;
+    gap: 10px;
+  }
+  #contenedorDerecha {
+    display: flex;
+    gap: 10px;
+    margin-top: 0px;
+  }
+  .categoria {
+    min-width: 300px;
+  }
+  #contenedorFav {
+    display: flex;
+    margin-bottom: 50px;
+  }
+  #contenedorInicial {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #buttonInicio {
+    width: 90%;
+    bottom: 35px;
+    position: fixed;
+  }
 }
-#contenedorPerros {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 15px;
-  margin-bottom: 100px;
+@media only screen and (max-width: 600px) {
+  #contenedorGatos {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+
+  #contenedorPerros {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+  #contenedorDerecha {
+    margin-top: 25px;
+  }
+  #contenedorFav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 100px;
+  }
+  #contenedorInicial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #buttonInicio {
+    width: 90%;
+  }
+  .cardInicial {
+    margin-top: 25px;
+  }
+  #contenedorIniciaL #text {
+    margin-top: 0;
+  }
 }
 
 #contenedorGatos {
-  
   transition: 0.5s;
 }
 #contenedorPerros {
   transition: 0.5s;
-}
-
-#contenedorDerecha {
-  margin-top: 15px;
 }
 
 .card {
@@ -329,61 +386,51 @@ footer{
 #publicacion {
   width: 50%;
 }
-#contenedorFav {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 15px;
-  margin-bottom: 100px;
-}
+
 #contenedorPrincipalProfile {
-    display: flex;
-    flex-direction: column;
-    
-}
-#boxTitulo {
-  padding-left: 25px;
-}
-#dataContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#dataContainer p{
- padding: 0px;
- margin-bottom: 0;
-}
-#dataContainer #sub{
-    font-size: 14px;
-    margin-top: 0%;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-#form{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    
+#dataContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#form input{
-    width: 100%;
-    border: 1px solid black;
-    border-radius: 5px;
-    height: 48px;
-    
-    }
+#dataContainer p {
+  padding: 0px;
+  margin-bottom: 0;
+}
+#dataContainer #sub {
+  font-size: 14px;
+  margin-top: 0%;
+  margin-bottom: 20px;
+}
 
-#form label{
-    font-size: 15px;
-    padding: 10px;
-    margin-left: 20px;
+#form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
-#buttonContainer{
-    padding-top: 20px;
+#form input {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 48px;
 }
-#buttonContainer button{
-    width: 100%;
-    background-color: var(--color-botones);
-    color: white;
-    border-radius: 98px;
-    padding: 16px;
+
+#form label {
+  font-size: 15px;
+  padding: 10px;
+  margin-left: 20px;
+}
+#buttonContainer {
+  padding-top: 20px;
+}
+#buttonContainer button {
+  width: 100%;
+  background-color: var(--color-botones);
+  color: white;
+  border-radius: 98px;
+  padding: 16px;
 }
