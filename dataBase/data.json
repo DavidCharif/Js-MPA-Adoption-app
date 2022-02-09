@@ -16,10 +16,10 @@
     "nombre":"Papi",
     "genero":"male",
     "raza":"Chihuahua",
-    "edad":"4",
+    "edad":"4 meses",
     "direccion":"4140 Parker Rd. Allentown, New Mexico 31134",
     "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
-    "historia":"lorem ipsum",
+    "historia":"Papi es un Perrito cariñoso",
     "urlImg":"img/dog/02.png",
     "publicado":"Maria Dolores",
     "tipo":"dog"
@@ -37,6 +37,42 @@
     "tipo":"dog"
   },{
     "id":"4",
+    "nombre":"Chester",
+    "genero":"male",
+    "raza":"Golden retriever",
+    "edad":"4",
+    "direccion":"Calle 223",
+    "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
+    "historia":"lorem ipsum",
+    "urlImg":"img/dog/04.png",
+    "publicado":"Maria Dolores",
+    "tipo":"dog"
+  },{
+    "id":"5",
+    "nombre":"Chester",
+    "genero":"male",
+    "raza":"Golden retriever",
+    "edad":"4",
+    "direccion":"Calle 223",
+    "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
+    "historia":"lorem ipsum",
+    "urlImg":"img/dog/04.png",
+    "publicado":"Maria Dolores",
+    "tipo":"dog"
+  },{
+    "id":"6",
+    "nombre":"Chester",
+    "genero":"male",
+    "raza":"Golden retriever",
+    "edad":"4",
+    "direccion":"Calle 223",
+    "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
+    "historia":"lorem ipsum",
+    "urlImg":"img/dog/04.png",
+    "publicado":"Maria Dolores",
+    "tipo":"dog"
+  },{
+    "id":"7",
     "nombre":"Chester",
     "genero":"male",
     "raza":"Golden retriever",
@@ -86,6 +122,42 @@
     "tipo":"cat"
   },{
     "id":"4",
+    "nombre":"Bombón",
+    "genero":"female",
+    "raza":"Gato americano",
+    "edad":"7",
+    "direccion":"Calle 223",
+    "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
+    "historia":"lorem ipsum",
+    "urlImg":"img/cat/04.png",
+    "publicado":"Juan Jesus",
+    "tipo":"cat"
+  },{
+    "id":"5",
+    "nombre":"Bombón",
+    "genero":"female",
+    "raza":"Gato americano",
+    "edad":"7",
+    "direccion":"Calle 223",
+    "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
+    "historia":"lorem ipsum",
+    "urlImg":"img/cat/04.png",
+    "publicado":"Juan Jesus",
+    "tipo":"cat"
+  },{
+    "id":"6",
+    "nombre":"Bombón",
+    "genero":"female",
+    "raza":"Gato americano",
+    "edad":"7",
+    "direccion":"Calle 223",
+    "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
+    "historia":"lorem ipsum",
+    "urlImg":"img/cat/04.png",
+    "publicado":"Juan Jesus",
+    "tipo":"cat"
+  },{
+    "id":"7",
     "nombre":"Bombón",
     "genero":"female",
     "raza":"Gato americano",

@@ -50,7 +50,7 @@ export const openDetail = (obj) => {
   let docFragment = document.createDocumentFragment()
   let div = document.createElement('div')
   div.setAttribute('id', 'contendedorDetalle')
-  div.innerHTML = `
+  div.innerHTML = /* html */`
   <div id="PrimeraMitad">
     <div id="imagenDetalle" style="background: url(${urlImg}); background-size: cover">
     <img id="backArrow" src="img/detail/backArray.png">

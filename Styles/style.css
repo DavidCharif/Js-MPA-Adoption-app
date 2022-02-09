@@ -96,7 +96,7 @@ ul {
   left: 0;
   justify-content: space-evenly;
   align-items: center;
-  min-width: 375px;
+  min-width: 255px;
   padding-inline-start: 0px;
 }
 
@@ -200,9 +200,7 @@ footer{
 #contenedorPerros {
   transition: 0.5s;
 }
-.clear{
-  min-width: 400px;
-}
+
 #contenedorDerecha {
   margin-top: 15px;
 }
