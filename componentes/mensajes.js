@@ -64,8 +64,8 @@ export const contactar = (urlImg, nombre) => {
 
     `
   setTimeout(() => {
-    let input = document.getElementById('inputMensajes')
-    input.keyup = (e) => enviarMensaje(e)
+    /* let input = document.getElementById('inputMensajes')
+    input.keyup = (e) => enviarMensaje(e) */
     let arrow = document.getElementById('backArrow')
     arrow.onclick = () => mensajes($contenedor)
   }, 200)
