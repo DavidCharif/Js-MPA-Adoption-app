@@ -8,7 +8,7 @@ let ul
 const footerFun = () => {
   let footer = document.createElement('footer')
   ul = document.createElement('ul')
-  ul.innerHTML = `
+  ul.innerHTML = /* html */`
   <li class="navLink">      
     <a >
     <div style="display:flex" id="ContainerHome" class="footerContainer">
@@ -17,21 +17,21 @@ const footerFun = () => {
     </a>
   </li>
   <li class="navLink">
-    <a href="#news">
+    <a href="#mensajes">
       <div style="display:flex" id="ContainerMensajes" class="footerContainer">
         <img src="img/footer/mensajes.svg">  
       </div>
      </a>
   </li>
   <li class="navLink">
-    <a href="#contact">
+    <a href="#favoritos">
       <div style="display:flex" id="ContainerFav" class="footerContainer">
         <img src="img/footer/fav.svg">
       </div>
     </a>
   </li>
   <li class="navLink">
-    <a href="#about">
+    <a href="#perfil">
       <div style="display:flex" id="ContainerProfile" class="footerContainer">
         <img src="img/footer/perfil.svg"></a></li>
       </div>
@@ -153,17 +153,17 @@ export const footerGenerator = (contenedor, num) => {
        </div>
       </a>
       </li>
-      <li><a href="#news">
+      <li><a href="#mensajes">
       <div style="display:flex" id="ContainerMensajes" class="footerContainer">
       <img src="/img/footer/mensajes.svg">
       </div>
       </a></li>
-      <li><a href="#contact">
+      <li><a href="favoritos">
       <div style="display:flex" id="ContainerFav" class="footerContainer">
       <img src="/img/footer/fav.svg">
       </div>
       </a></li>
-      <li><a href="#about">
+      <li><a href="#profile">
       <div style="display:flex" id="ContainerProfile" class="footerContainer">
       <img src="/img/footer/perfil.svg"></a></li>
       </div>

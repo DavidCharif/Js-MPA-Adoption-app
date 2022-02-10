@@ -1,4 +1,5 @@
 import { footerGenerator } from './footer.js'
+import { mensajes } from './mensajes.js'
 import { addEvents, pagPrincipal } from './principal.js'
 import { goToProfile } from './profile.js'
 let containerFav
@@ -39,7 +40,7 @@ export const goToFav = (container) => {
       pagPrincipal()
     })
     ContainerMensajes.addEventListener('click', (e) => {
-      console.log('messages')
+      mensajes(container)
     })
     ContainerFav.addEventListener('click', (e) => {
       console.log('Ya estamos aca')

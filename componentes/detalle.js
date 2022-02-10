@@ -41,7 +41,7 @@ export const openDetail = (obj) => {
     genero,
     raza,
     edad,
-    personalidad,
+    Personalidad,
     direccion,
     historia,
     publicado
@@ -70,7 +70,7 @@ export const openDetail = (obj) => {
     <div id="bloqueThreeDatos">
       <div id="Personalidad">
         <h4>Personalidad</h4>
-        <p>${personalidad}</p>
+        <div id="contenedorPersonalidad"></div>
       </div>
       <div id="historia">
         <h4>Historia de ${nombre}</h4>
@@ -134,6 +134,8 @@ export const openDetail = (obj) => {
         }
       }
     }
+    let contenedorPersonalidad = document.getElementById('contenedorPersonalidad')
+    divPersonalidad(Personalidad,contenedorPersonalidad)
   }, 200)
 
   setTimeout(() => {
@@ -203,4 +205,20 @@ const isInFav = (obj) => {
       }
     })
   }
+}
+const divPersonalidad = (arr, containedorPersonalidad) => {
+  let imagenes = ['img/caracteristicas/carinoso.png','img/caracteristicas/inquieto.png', 'img/caracteristicas/jugueton.png', 'img/caracteristicas/tierno.png']
+  
+  arr.map(each =>{
+    let i = Math.floor(Math.random()*4)
+    console.log(each)
+    containedorPersonalidad.innerHTML += /* html */`
+      <div class="personalidad">
+        <img src=${imagenes[i]}>
+        <p>${each}</p>
+        
+      </div>
+    `
+    i++
+  })
 }

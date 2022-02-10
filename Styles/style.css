@@ -45,10 +45,6 @@ body {
   min-width: 375px;
 }
 
-#text {
-  padding: 35px;
-}
-
 #tituloPrincipal {
   font-size: large;
 }
@@ -200,6 +196,7 @@ footer {
     margin-bottom: 50px;
   }
   #contenedorInicial {
+    padding: 10px;
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -425,4 +422,21 @@ footer {
   color: white;
   border-radius: 98px;
   padding: 16px;
+}
+#contenedorPersonalidad{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.personalidad{
+  display: flex;
+  border: 2px solid hsla(262, 58%, 70%, 1);
+  border-radius: 8px;
+  width: 92px;
+  height: 92px;
+  
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
