@@ -1,3 +1,5 @@
+import { contactar } from "./mensajes.js"
+
 let localObj
 
 let like
@@ -88,7 +90,7 @@ export const openDetail = (obj) => {
           </div>
       </div>
       <div id="botonContacto">
-        <button type="button">Contactar</button>
+        <button id="contactButton" data-img=${urlImgProfile} data-value="${publicado}" type="button">Contactar</button>
       </div>
     </div> 
   </div>   
@@ -140,6 +142,13 @@ export const openDetail = (obj) => {
     }
     let contenedorPersonalidad = document.getElementById('contenedorPersonalidad')
     divPersonalidad(Personalidad,contenedorPersonalidad)
+    let contactButton = document.getElementById('contactButton')
+    contactButton.onclick = (e) => {
+      let name = e.target.getAttribute('data-value')
+      let img = e.target.getAttribute('data-img');
+
+      contactar(img,name)
+    }
   }, 200)
 
   setTimeout(() => {

@@ -132,8 +132,6 @@ footer {
     brightness(94%) contrast(92%);
 }
 
-
-
 #boxTitulo h3 {
   align-items: flex-start;
   font-weight: 800;
@@ -186,14 +184,17 @@ footer {
     display: flex;
     gap: 10px;
     margin-top: 0px;
-    
   }
   .categoria {
     min-width: 300px;
   }
   #contenedorFav {
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
   #contenedorInicial {
     padding: 10px;
@@ -201,12 +202,25 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
   }
+
   #buttonInicio {
     width: 90%;
     bottom: 35px;
     position: fixed;
   }
+  #contenedorPersonalidad {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  #publicacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 }
 @media only screen and (max-width: 600px) {
   #contenedorGatos {
@@ -232,9 +246,16 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
+
   #buttonInicio {
     width: 90%;
+    bottom: 35px;
+    position: fixed;
   }
   .cardInicial {
     margin-top: 25px;
@@ -242,6 +263,24 @@ footer {
   #contenedorIniciaL #text {
     margin-top: 0;
   }
+  #contenedorFav {
+    display: flex;
+    margin-bottom: 100px;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  #contenedorPersonalidad {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #publicacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 }
 
 #contenedorGatos {
@@ -299,7 +338,7 @@ footer {
 
 #backArrow {
   margin: 15px;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--color-botones);
   border-radius: 180px;
   padding: 5px;
   cursor: pointer;
@@ -367,7 +406,7 @@ footer {
 }
 #botonContacto button {
   width: 100%;
-  padding: 8px 20px;
+  padding: 12px 20px;
   border-radius: 30px;
   color: white;
   background-color: var(--color-botones);
@@ -407,6 +446,18 @@ footer {
   border-radius: 5px;
   height: 48px;
 }
+input[type = text]{
+  width: 100%;
+  padding: 10px 15px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+input[type= email]{
+  width: 100%;
+  padding: 10px 15px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
 
 #form label {
   font-size: 15px;
@@ -423,19 +474,14 @@ footer {
   border-radius: 98px;
   padding: 16px;
 }
-#contenedorPersonalidad{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 
-}
-.personalidad{
+.personalidad {
   display: flex;
   border: 2px solid hsla(262, 58%, 70%, 1);
   border-radius: 8px;
   width: 92px;
   height: 92px;
-  flex-direction: column;  
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -443,27 +489,72 @@ footer {
   width: 35px;
   height: 35px;
 }
-#publicacion{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-#publicacion img{
+
+#publicacion img {
   width: 48px;
   height: 48px;
   border: 3px solid hsla(178, 45%, 67%, 1);
-  border-radius: 90px
+  border-radius: 90px;
 }
-#publicacion p{
+#publicacion p {
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-#publicado1{
+#publicado1 {
   font-weight: 400;
   font-size: 11px;
 }
-#publicado2{
+#publicado2 {
   font-size: 14px;
   font-weight: 700;
+}
+#boxTitulo{
+  width: 100%;
+ 
+}
+
+#contactoTop{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  padding-top: 35px;
+ 
+}
+#contactoTop #profilePic{
+  width: 64px;
+  height: 64px;
+  border: 3px solid hsla(178, 45%, 67%, 1);
+  border-radius: 90px;
+}
+#contactoTop p{
+  font-size: 16px;
+  font-weight: 700;
+}
+#back{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+#back #backArrow {
+  width: 30px;
+  height: 30px;
+
+}
+#blankSpace{
+  width: 70px;
+  height: 70px;
+}
+#containerMensajes{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 300px;
+  justify-content: space-between;
+}
+#textContainerMensajes{
+  display: flex;
 }

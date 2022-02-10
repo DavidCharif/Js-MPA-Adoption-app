@@ -50,7 +50,7 @@ const addHtml = (id) => {
 
 let y = () => setTimeout(function () {
   addHtml(0)
-}, 300)
+}, 100)
 
 
 const addEvent = (id, func) => {
