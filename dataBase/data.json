@@ -10,7 +10,8 @@
     "historia":"Rocky es un perrito muy lindo y cariñoso, tiene 5 hermanitos más y por cuestiones de espacio y tiempo no podremos cuidar a todos, nuestra misión es encontrar la familia ideal para él y seguro que tú eres la persona indicada.",
     "urlImg":"img/dog/01.png",
     "publicado":"Maria Dolores",
-    "tipo":"dog"
+    "tipo":"dog",
+    "urlImgProfile":"img/detail/person.png"
   },{
     "id":"2",
     "nombre":"Papi",
@@ -22,7 +23,8 @@
     "historia":"Papi es un perrito muy lindo y cariñoso, tiene 5 hermanitos más y por cuestiones de espacio y tiempo no podremos cuidar a todos, nuestra misión es encontrar la familia ideal para él y seguro que tú eres la persona indicada.",
     "urlImg":"img/dog/02.png",
     "publicado":"Maria Dolores",
-    "tipo":"dog"
+    "tipo":"dog",
+    "urlImgProfile":"img/detail/person.png"
   },{
     "id":"3",
     "nombre":"Pelusa",
@@ -34,7 +36,8 @@
     "historia":"Pelusa es un perrito muy lindo y cariñoso, tiene 5 hermanitos más y por cuestiones de espacio y tiempo no podremos cuidar a todos, nuestra misión es encontrar la familia ideal para él y seguro que tú eres la persona indicada.",
     "urlImg":"img/dog/03.png",
     "publicado":"Maria Dolores",
-    "tipo":"dog"
+    "tipo":"dog",
+    "urlImgProfile":"img/detail/person.png"
   },{
     "id":"4",
     "nombre":"Chester",
@@ -46,7 +49,8 @@
     "historia":"Chester es un perrito muy lindo y cariñoso, tiene 5 hermanitos más y por cuestiones de espacio y tiempo no podremos cuidar a todos, nuestra misión es encontrar la familia ideal para él y seguro que tú eres la persona indicada.",
     "urlImg":"img/dog/08git a.png",
     "publicado":"Maria Dolores",
-    "tipo":"dog"
+    "tipo":"dog",
+    "urlImgProfile":"img/detail/person.png"
   },{
     "id":"5",
     "nombre":"Coco",
@@ -58,7 +62,8 @@
     "historia":"Coco es un perrito muy lindo y cariñoso, tiene 5 hermanitos más y por cuestiones de espacio y tiempo no podremos cuidar a todos, nuestra misión es encontrar la familia ideal para él y seguro que tú eres la persona indicada.",
     "urlImg":"img/dog/05.png",
     "publicado":"Maria Dolores",
-    "tipo":"dog"
+    "tipo":"dog",
+    "urlImgProfile":"img/detail/person.png"
   },{
     "id":"6",
     "nombre":"Thor",
@@ -70,7 +75,8 @@
     "historia":"Rocky es un perrito muy lindo y cariñoso, tiene 5 hermanitos más y por cuestiones de espacio y tiempo no podremos cuidar a todos, nuestra misión es encontrar la familia ideal para él y seguro que tú eres la persona indicada.",
     "urlImg":"img/dog/06.png",
     "publicado":"Maria Dolores",
-    "tipo":"dog"
+    "tipo":"dog",
+    "urlImgProfile":"img/detail/person.png"
   },{
     "id":"7",
     "nombre":"Leo",
@@ -82,7 +88,8 @@
     "historia": "Cheste es un perrito muy lindo y cariñoso, tiene 5 hermanitos más y por cuestiones de espacio y tiempo no podremos cuidar a todos, nuestra misión es encontrar la familia ideal para él y seguro que tú eres la persona indicada.",
     "urlImg":"img/dog/07.png",
     "publicado":"Maria Dolores",
-    "tipo":"dog"
+    "tipo":"dog",
+    "urlImgProfile":"img/detail/person.png"
   }],
   "gatos":[{
     "id":"1",
@@ -95,78 +102,85 @@
     "historia":"Matilde es la mejor guarda espaldas, siempre esta hay para conversar y recibirá cada día con un fuerte cariño. Fue rescatada y busco una persona que le pueda dar todo el amor que ella necesita.",
     "urlImg":"img/cat/01.png",
     "publicado":"Juan Jesus",
-    "tipo":"cat"
+    "tipo":"cat",
+    "urlImgProfile":"img/detail/person.png"
   },{
     "id":"2",
     "nombre":"Pelusa",
     "genero":"female",
     "raza":"Birmano",
     "edad":"7",
-    "direccion":"Calle 223",
+    "direccion":"4140 Parker Rd. Allentown, New Mexico 31134",
     "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
-    "historia":"lorem ipsum",
+    "historia":"Pelusa es la mejor guarda espaldas, siempre esta hay para conversar y recibirá cada día con un fuerte cariño. Fue rescatada y busco una persona que le pueda dar todo el amor que ella necesita.",
     "urlImg":"img/cat/02.png",
     "publicado":"Juan Jesus",
-    "tipo":"cat"
+    "tipo":"cat",
+    "urlImgProfile":"img/detail/person.png"
   },{
     "id":"3",
     "nombre":"Kity",
     "genero":"male",
     "raza":"Bombay",
-    "edad":"7",
-    "direccion":"Calle 223",
+    "edad":"7 años",
+    "direccion":"4140 Parker Rd. Allentown, New Mexico 31134",
     "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
-    "historia":"lorem ipsum",
+    "historia":"Kity es la mejor guarda espaldas, siempre esta hay para conversar y recibirá cada día con un fuerte cariño. Fue rescatada y busco una persona que le pueda dar todo el amor que ella necesita.",
     "urlImg":"img/cat/03.png",
     "publicado":"Juan Jesus",
-    "tipo":"cat"
+    "tipo":"cat",
+    "urlImgProfile":"img/detail/person.png"
   },{
     "id":"4",
     "nombre":"Bombón",
     "genero":"female",
     "raza":"Gato americano",
-    "edad":"7",
+    "edad":"5 meses",
     "direccion":"Calle 223",
     "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
-    "historia":"lorem ipsum",
+    "historia":"Bombón es la mejor guarda espaldas, siempre esta hay para conversar y recibirá cada día con un fuerte cariño. Fue rescatada y busco una persona que le pueda dar todo el amor que ella necesita.",
     "urlImg":"img/cat/04.png",
     "publicado":"Juan Jesus",
-    "tipo":"cat"
+    "tipo":"cat",
+    "urlImgProfile":"img/detail/person.png"
   },{
     "id":"5",
-    "nombre":"Bombón",
-    "genero":"female",
+    "nombre":"Sol",
+    "genero":"male",
     "raza":"Gato americano",
-    "edad":"7",
+    "edad":"5 años",
     "direccion":"Calle 223",
     "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
-    "historia":"lorem ipsum",
-    "urlImg":"img/cat/04.png",
+    "historia":"Sol es la mejor guarda espaldas, siempre esta hay para conversar y recibirá cada día con un fuerte cariño. Fue rescatada y busco una persona que le pueda dar todo el amor que ella necesita.",
+    "urlImg":"img/cat/05.png",
     "publicado":"Juan Jesus",
-    "tipo":"cat"
+    "tipo":"cat",
+    "urlImgProfile":"img/detail/person.png"
   },{
     "id":"6",
-    "nombre":"Bombón",
+    "nombre":"Burbuja",
     "genero":"female",
     "raza":"Gato americano",
-    "edad":"7",
+    "edad":"7 meses",
     "direccion":"Calle 223",
     "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
-    "historia":"lorem ipsum",
-    "urlImg":"img/cat/04.png",
+    "historia":"Burbuja es la mejor guarda espaldas, siempre esta hay para conversar y recibirá cada día con un fuerte cariño. Fue rescatada y busco una persona que le pueda dar todo el amor que ella necesita.",
+    "urlImg":"img/cat/06.png",
     "publicado":"Juan Jesus",
-    "tipo":"cat"
+    "tipo":"cat",
+    "urlImgProfile":"img/detail/person.png"
   },{
     "id":"7",
-    "nombre":"Bombón",
-    "genero":"female",
-    "raza":"Gato americano",
-    "edad":"7",
+    "nombre":"Tigre",
+    "genero":"male",
+    "raza":"Gato Criollo",
+    "edad":"3 meses",
     "direccion":"Calle 223",
     "Personalidad":["Jugueton","Disiplinado","Tranquilo"],
-    "historia":"lorem ipsum",
-    "urlImg":"img/cat/04.png",
+    "historia":"Tigre es la mejor guarda espaldas, siempre esta hay para conversar y recibirá cada día con un fuerte cariño. Fue rescatada y busco una persona que le pueda dar todo el amor que ella necesita.",
+    "urlImg":"img/cat/07.png",
     "publicado":"Juan Jesus",
-    "tipo":"cat"
+    "tipo":"cat",
+    "urlImgProfile":"img/detail/person.png"
   }]
 }

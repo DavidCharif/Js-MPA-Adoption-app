@@ -44,7 +44,8 @@ export const openDetail = (obj) => {
     Personalidad,
     direccion,
     historia,
-    publicado
+    publicado,
+    urlImgProfile
   } = obj
 
   let docFragment = document.createDocumentFragment()
@@ -79,9 +80,12 @@ export const openDetail = (obj) => {
     </div>
     <div id="bloqueContacto">
       <div id="publicacion">
-        <img>
-        <p>Publicado por</p>
-        <p>${publicado}</p>
+
+        <img src=${urlImgProfile}>
+          <div id="publicacionText">
+        <p id="publicado1">Publicado por</p>
+        <p id="publicado2">${publicado}</p>
+          </div>
       </div>
       <div id="botonContacto">
         <button type="button">Contactar</button>
@@ -210,11 +214,11 @@ const divPersonalidad = (arr, containedorPersonalidad) => {
   let imagenes = ['img/caracteristicas/carinoso.png','img/caracteristicas/inquieto.png', 'img/caracteristicas/jugueton.png', 'img/caracteristicas/tierno.png']
   
   arr.map(each =>{
-    let i = Math.floor(Math.random()*4)
+    let i = Math.floor(Math.random()*12)
     console.log(each)
     containedorPersonalidad.innerHTML += /* html */`
       <div class="personalidad">
-        <img src=${imagenes[i]}>
+        <img src='img/caracteristicas/${i}.png'>
         <p>${each}</p>
         
       </div>
