@@ -22,7 +22,7 @@ ejemplo de cómo instalar lo que requiero si es muy específico
 ![image](https://user-images.githubusercontent.com/53876827/154260299-aa9cefca-e67f-4a6a-822c-53ff6b6c5937.png)
 
 📌 Stack
-Javascript Vanilla y Styled Components
+Javascript Vanilla y css puro con flex
 
 🌟 Autor
 - @DavidCharif
